@@ -1,0 +1,1641 @@
+Last login: Sun Oct  3 21:26:58 on ttys001
+maxime@mac ~ % /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+==> Checking for `sudo` access (which may request your password).
+Password:
+==> You are using macOS 12.0.
+==> We do not provide support for this pre-release version.
+This installation may not succeed.
+After installation, you will encounter build failures with some formulae.
+Please create pull requests instead of asking for help on Homebrew\'s GitHub,
+Twitter or IRC. You are responsible for resolving any issues you experience
+while you are running this pre-release version.
+
+==> This script will install:
+/opt/homebrew/bin/brew
+/opt/homebrew/share/doc/homebrew
+/opt/homebrew/share/man/man1/brew.1
+/opt/homebrew/share/zsh/site-functions/_brew
+/opt/homebrew/etc/bash_completion.d/brew
+/opt/homebrew
+==> The following new directories will be created:
+/opt/homebrew/bin
+/opt/homebrew/etc
+/opt/homebrew/include
+/opt/homebrew/lib
+/opt/homebrew/sbin
+/opt/homebrew/share
+/opt/homebrew/var
+/opt/homebrew/opt
+/opt/homebrew/share/zsh
+/opt/homebrew/share/zsh/site-functions
+/opt/homebrew/var/homebrew
+/opt/homebrew/var/homebrew/linked
+/opt/homebrew/Cellar
+/opt/homebrew/Caskroom
+/opt/homebrew/Frameworks
+==> The Xcode Command Line Tools will be installed.
+
+Press RETURN to continue or any other key to abort
+==> /usr/bin/sudo /bin/mkdir -p /opt/homebrew
+==> /usr/bin/sudo /usr/sbin/chown root:wheel /opt/homebrew
+==> /usr/bin/sudo /bin/mkdir -p /opt/homebrew/bin /opt/homebrew/etc /opt/homebrew/include /opt/homebrew/lib /opt/homebrew/sbin /opt/homebrew/share /opt/homebrew/var /opt/homebrew/opt /opt/homebrew/share/zsh /opt/homebrew/share/zsh/site-functions /opt/homebrew/var/homebrew /opt/homebrew/var/homebrew/linked /opt/homebrew/Cellar /opt/homebrew/Caskroom /opt/homebrew/Frameworks
+==> /usr/bin/sudo /bin/chmod u=rwx,g=rwx /opt/homebrew/bin /opt/homebrew/etc /opt/homebrew/include /opt/homebrew/lib /opt/homebrew/sbin /opt/homebrew/share /opt/homebrew/var /opt/homebrew/opt /opt/homebrew/share/zsh /opt/homebrew/share/zsh/site-functions /opt/homebrew/var/homebrew /opt/homebrew/var/homebrew/linked /opt/homebrew/Cellar /opt/homebrew/Caskroom /opt/homebrew/Frameworks
+==> /usr/bin/sudo /bin/chmod g-w,o-w /opt/homebrew/share/zsh /opt/homebrew/share/zsh/site-functions
+==> /usr/bin/sudo /usr/sbin/chown maxime /opt/homebrew/bin /opt/homebrew/etc /opt/homebrew/include /opt/homebrew/lib /opt/homebrew/sbin /opt/homebrew/share /opt/homebrew/var /opt/homebrew/opt /opt/homebrew/share/zsh /opt/homebrew/share/zsh/site-functions /opt/homebrew/var/homebrew /opt/homebrew/var/homebrew/linked /opt/homebrew/Cellar /opt/homebrew/Caskroom /opt/homebrew/Frameworks
+==> /usr/bin/sudo /usr/bin/chgrp admin /opt/homebrew/bin /opt/homebrew/etc /opt/homebrew/include /opt/homebrew/lib /opt/homebrew/sbin /opt/homebrew/share /opt/homebrew/var /opt/homebrew/opt /opt/homebrew/share/zsh /opt/homebrew/share/zsh/site-functions /opt/homebrew/var/homebrew /opt/homebrew/var/homebrew/linked /opt/homebrew/Cellar /opt/homebrew/Caskroom /opt/homebrew/Frameworks
+==> /usr/bin/sudo /usr/sbin/chown -R maxime:admin /opt/homebrew
+==> /usr/bin/sudo /bin/mkdir -p /Users/maxime/Library/Caches/Homebrew
+==> /usr/bin/sudo /bin/chmod g+rwx /Users/maxime/Library/Caches/Homebrew
+==> /usr/bin/sudo /usr/sbin/chown -R maxime /Users/maxime/Library/Caches/Homebrew
+==> Searching online for the Command Line Tools
+==> /usr/bin/sudo /usr/bin/touch /tmp/.com.apple.dt.CommandLineTools.installondemand.in-progress
+==> Installing Command Line Tools for Xcode-13.0
+==> /usr/bin/sudo /usr/sbin/softwareupdate -i Command\ Line\ Tools\ for\ Xcode-13.0
+Software Update Tool
+
+Finding available software
+
+Downloading Command Line Tools for Xcode
+Downloaded Command Line Tools for Xcode
+Installing Command Line Tools for Xcode
+Done with Command Line Tools for Xcode
+Done.
+==> /usr/bin/sudo /bin/rm -f /tmp/.com.apple.dt.CommandLineTools.installondemand.in-progress
+==> /usr/bin/sudo /usr/bin/xcode-select --switch /Library/Developer/CommandLineTools
+==> Downloading and installing Homebrew...
+remote: Enumerating objects: 193514, done.
+remote: Counting objects: 100% (2871/2871), done.
+remote: Compressing objects: 100% (1214/1214), done.
+remote: Total 193514 (delta 1680), reused 2540 (delta 1545), pack-reused 190643
+Receiving objects: 100% (193514/193514), 53.08 MiB | 2.74 MiB/s, done.
+Resolving deltas: 100% (142996/142996), done.
+From https://github.com/Homebrew/brew
+ * [new branch]          master     -> origin/master
+ * [new tag]             0.1        -> 0.1
+ * [new tag]             0.2        -> 0.2
+ * [new tag]             0.3        -> 0.3
+ * [new tag]             0.4        -> 0.4
+ * [new tag]             0.5        -> 0.5
+ * [new tag]             0.6        -> 0.6
+ * [new tag]             0.7        -> 0.7
+ * [new tag]             0.7.1      -> 0.7.1
+ * [new tag]             0.8        -> 0.8
+ * [new tag]             0.8.1      -> 0.8.1
+ * [new tag]             0.9        -> 0.9
+ * [new tag]             0.9.1      -> 0.9.1
+ * [new tag]             0.9.2      -> 0.9.2
+ * [new tag]             0.9.3      -> 0.9.3
+ * [new tag]             0.9.4      -> 0.9.4
+ * [new tag]             0.9.5      -> 0.9.5
+ * [new tag]             0.9.8      -> 0.9.8
+ * [new tag]             0.9.9      -> 0.9.9
+ * [new tag]             1.0.0      -> 1.0.0
+ * [new tag]             1.0.1      -> 1.0.1
+ * [new tag]             1.0.2      -> 1.0.2
+ * [new tag]             1.0.3      -> 1.0.3
+ * [new tag]             1.0.4      -> 1.0.4
+ * [new tag]             1.0.5      -> 1.0.5
+ * [new tag]             1.0.6      -> 1.0.6
+ * [new tag]             1.0.7      -> 1.0.7
+ * [new tag]             1.0.8      -> 1.0.8
+ * [new tag]             1.0.9      -> 1.0.9
+ * [new tag]             1.1.0      -> 1.1.0
+ * [new tag]             1.1.1      -> 1.1.1
+ * [new tag]             1.1.10     -> 1.1.10
+ * [new tag]             1.1.11     -> 1.1.11
+ * [new tag]             1.1.12     -> 1.1.12
+ * [new tag]             1.1.13     -> 1.1.13
+ * [new tag]             1.1.2      -> 1.1.2
+ * [new tag]             1.1.3      -> 1.1.3
+ * [new tag]             1.1.4      -> 1.1.4
+ * [new tag]             1.1.5      -> 1.1.5
+ * [new tag]             1.1.6      -> 1.1.6
+ * [new tag]             1.1.7      -> 1.1.7
+ * [new tag]             1.1.8      -> 1.1.8
+ * [new tag]             1.1.9      -> 1.1.9
+ * [new tag]             1.2.0      -> 1.2.0
+ * [new tag]             1.2.1      -> 1.2.1
+ * [new tag]             1.2.2      -> 1.2.2
+ * [new tag]             1.2.3      -> 1.2.3
+ * [new tag]             1.2.4      -> 1.2.4
+ * [new tag]             1.2.5      -> 1.2.5
+ * [new tag]             1.2.6      -> 1.2.6
+ * [new tag]             1.3.0      -> 1.3.0
+ * [new tag]             1.3.1      -> 1.3.1
+ * [new tag]             1.3.2      -> 1.3.2
+ * [new tag]             1.3.3      -> 1.3.3
+ * [new tag]             1.3.4      -> 1.3.4
+ * [new tag]             1.3.5      -> 1.3.5
+ * [new tag]             1.3.6      -> 1.3.6
+ * [new tag]             1.3.7      -> 1.3.7
+ * [new tag]             1.3.8      -> 1.3.8
+ * [new tag]             1.3.9      -> 1.3.9
+ * [new tag]             1.4.0      -> 1.4.0
+ * [new tag]             1.4.1      -> 1.4.1
+ * [new tag]             1.4.2      -> 1.4.2
+ * [new tag]             1.4.3      -> 1.4.3
+ * [new tag]             1.5.0      -> 1.5.0
+ * [new tag]             1.5.1      -> 1.5.1
+ * [new tag]             1.5.10     -> 1.5.10
+ * [new tag]             1.5.11     -> 1.5.11
+ * [new tag]             1.5.12     -> 1.5.12
+ * [new tag]             1.5.13     -> 1.5.13
+ * [new tag]             1.5.14     -> 1.5.14
+ * [new tag]             1.5.2      -> 1.5.2
+ * [new tag]             1.5.3      -> 1.5.3
+ * [new tag]             1.5.4      -> 1.5.4
+ * [new tag]             1.5.5      -> 1.5.5
+ * [new tag]             1.5.6      -> 1.5.6
+ * [new tag]             1.5.7      -> 1.5.7
+ * [new tag]             1.5.8      -> 1.5.8
+ * [new tag]             1.5.9      -> 1.5.9
+ * [new tag]             1.6.0      -> 1.6.0
+ * [new tag]             1.6.1      -> 1.6.1
+ * [new tag]             1.6.10     -> 1.6.10
+ * [new tag]             1.6.11     -> 1.6.11
+ * [new tag]             1.6.12     -> 1.6.12
+ * [new tag]             1.6.13     -> 1.6.13
+ * [new tag]             1.6.14     -> 1.6.14
+ * [new tag]             1.6.15     -> 1.6.15
+ * [new tag]             1.6.16     -> 1.6.16
+ * [new tag]             1.6.17     -> 1.6.17
+ * [new tag]             1.6.2      -> 1.6.2
+ * [new tag]             1.6.3      -> 1.6.3
+ * [new tag]             1.6.4      -> 1.6.4
+ * [new tag]             1.6.5      -> 1.6.5
+ * [new tag]             1.6.6      -> 1.6.6
+ * [new tag]             1.6.7      -> 1.6.7
+ * [new tag]             1.6.8      -> 1.6.8
+ * [new tag]             1.6.9      -> 1.6.9
+ * [new tag]             1.7.0      -> 1.7.0
+ * [new tag]             1.7.1      -> 1.7.1
+ * [new tag]             1.7.2      -> 1.7.2
+ * [new tag]             1.7.3      -> 1.7.3
+ * [new tag]             1.7.4      -> 1.7.4
+ * [new tag]             1.7.5      -> 1.7.5
+ * [new tag]             1.7.6      -> 1.7.6
+ * [new tag]             1.7.7      -> 1.7.7
+ * [new tag]             1.8.0      -> 1.8.0
+ * [new tag]             1.8.1      -> 1.8.1
+ * [new tag]             1.8.2      -> 1.8.2
+ * [new tag]             1.8.3      -> 1.8.3
+ * [new tag]             1.8.4      -> 1.8.4
+ * [new tag]             1.8.5      -> 1.8.5
+ * [new tag]             1.8.6      -> 1.8.6
+ * [new tag]             1.9.0      -> 1.9.0
+ * [new tag]             1.9.1      -> 1.9.1
+ * [new tag]             1.9.2      -> 1.9.2
+ * [new tag]             1.9.3      -> 1.9.3
+ * [new tag]             2.0.0      -> 2.0.0
+ * [new tag]             2.0.1      -> 2.0.1
+ * [new tag]             2.0.2      -> 2.0.2
+ * [new tag]             2.0.3      -> 2.0.3
+ * [new tag]             2.0.4      -> 2.0.4
+ * [new tag]             2.0.5      -> 2.0.5
+ * [new tag]             2.0.6      -> 2.0.6
+ * [new tag]             2.1.0      -> 2.1.0
+ * [new tag]             2.1.1      -> 2.1.1
+ * [new tag]             2.1.10     -> 2.1.10
+ * [new tag]             2.1.11     -> 2.1.11
+ * [new tag]             2.1.12     -> 2.1.12
+ * [new tag]             2.1.13     -> 2.1.13
+ * [new tag]             2.1.14     -> 2.1.14
+ * [new tag]             2.1.15     -> 2.1.15
+ * [new tag]             2.1.16     -> 2.1.16
+ * [new tag]             2.1.2      -> 2.1.2
+ * [new tag]             2.1.3      -> 2.1.3
+ * [new tag]             2.1.4      -> 2.1.4
+ * [new tag]             2.1.5      -> 2.1.5
+ * [new tag]             2.1.6      -> 2.1.6
+ * [new tag]             2.1.7      -> 2.1.7
+ * [new tag]             2.1.8      -> 2.1.8
+ * [new tag]             2.1.9      -> 2.1.9
+ * [new tag]             2.2.0      -> 2.2.0
+ * [new tag]             2.2.1      -> 2.2.1
+ * [new tag]             2.2.10     -> 2.2.10
+ * [new tag]             2.2.11     -> 2.2.11
+ * [new tag]             2.2.12     -> 2.2.12
+ * [new tag]             2.2.13     -> 2.2.13
+ * [new tag]             2.2.14     -> 2.2.14
+ * [new tag]             2.2.15     -> 2.2.15
+ * [new tag]             2.2.16     -> 2.2.16
+ * [new tag]             2.2.17     -> 2.2.17
+ * [new tag]             2.2.2      -> 2.2.2
+ * [new tag]             2.2.3      -> 2.2.3
+ * [new tag]             2.2.4      -> 2.2.4
+ * [new tag]             2.2.5      -> 2.2.5
+ * [new tag]             2.2.6      -> 2.2.6
+ * [new tag]             2.2.7      -> 2.2.7
+ * [new tag]             2.2.8      -> 2.2.8
+ * [new tag]             2.2.9      -> 2.2.9
+ * [new tag]             2.3.0      -> 2.3.0
+ * [new tag]             2.4.0      -> 2.4.0
+ * [new tag]             2.4.1      -> 2.4.1
+ * [new tag]             2.4.10     -> 2.4.10
+ * [new tag]             2.4.11     -> 2.4.11
+ * [new tag]             2.4.12     -> 2.4.12
+ * [new tag]             2.4.13     -> 2.4.13
+ * [new tag]             2.4.14     -> 2.4.14
+ * [new tag]             2.4.15     -> 2.4.15
+ * [new tag]             2.4.16     -> 2.4.16
+ * [new tag]             2.4.2      -> 2.4.2
+ * [new tag]             2.4.3      -> 2.4.3
+ * [new tag]             2.4.4      -> 2.4.4
+ * [new tag]             2.4.5      -> 2.4.5
+ * [new tag]             2.4.6      -> 2.4.6
+ * [new tag]             2.4.7      -> 2.4.7
+ * [new tag]             2.4.8      -> 2.4.8
+ * [new tag]             2.4.9      -> 2.4.9
+ * [new tag]             2.5.0      -> 2.5.0
+ * [new tag]             2.5.1      -> 2.5.1
+ * [new tag]             2.5.10     -> 2.5.10
+ * [new tag]             2.5.11     -> 2.5.11
+ * [new tag]             2.5.12     -> 2.5.12
+ * [new tag]             2.5.2      -> 2.5.2
+ * [new tag]             2.5.3      -> 2.5.3
+ * [new tag]             2.5.4      -> 2.5.4
+ * [new tag]             2.5.5      -> 2.5.5
+ * [new tag]             2.5.6      -> 2.5.6
+ * [new tag]             2.5.7      -> 2.5.7
+ * [new tag]             2.5.8      -> 2.5.8
+ * [new tag]             2.5.9      -> 2.5.9
+ * [new tag]             2.6.0      -> 2.6.0
+ * [new tag]             2.6.1      -> 2.6.1
+ * [new tag]             2.6.2      -> 2.6.2
+ * [new tag]             2.7.0      -> 2.7.0
+ * [new tag]             2.7.1      -> 2.7.1
+ * [new tag]             2.7.2      -> 2.7.2
+ * [new tag]             2.7.3      -> 2.7.3
+ * [new tag]             2.7.4      -> 2.7.4
+ * [new tag]             2.7.5      -> 2.7.5
+ * [new tag]             2.7.6      -> 2.7.6
+ * [new tag]             2.7.7      -> 2.7.7
+ * [new tag]             3.0.0      -> 3.0.0
+ * [new tag]             3.0.1      -> 3.0.1
+ * [new tag]             3.0.10     -> 3.0.10
+ * [new tag]             3.0.11     -> 3.0.11
+ * [new tag]             3.0.2      -> 3.0.2
+ * [new tag]             3.0.3      -> 3.0.3
+ * [new tag]             3.0.4      -> 3.0.4
+ * [new tag]             3.0.5      -> 3.0.5
+ * [new tag]             3.0.6      -> 3.0.6
+ * [new tag]             3.0.7      -> 3.0.7
+ * [new tag]             3.0.8      -> 3.0.8
+ * [new tag]             3.0.9      -> 3.0.9
+ * [new tag]             3.1.0      -> 3.1.0
+ * [new tag]             3.1.1      -> 3.1.1
+ * [new tag]             3.1.10     -> 3.1.10
+ * [new tag]             3.1.11     -> 3.1.11
+ * [new tag]             3.1.12     -> 3.1.12
+ * [new tag]             3.1.2      -> 3.1.2
+ * [new tag]             3.1.3      -> 3.1.3
+ * [new tag]             3.1.4      -> 3.1.4
+ * [new tag]             3.1.5      -> 3.1.5
+ * [new tag]             3.1.6      -> 3.1.6
+ * [new tag]             3.1.7      -> 3.1.7
+ * [new tag]             3.1.8      -> 3.1.8
+ * [new tag]             3.1.9      -> 3.1.9
+ * [new tag]             3.2.0      -> 3.2.0
+ * [new tag]             3.2.1      -> 3.2.1
+ * [new tag]             3.2.10     -> 3.2.10
+ * [new tag]             3.2.11     -> 3.2.11
+ * [new tag]             3.2.12     -> 3.2.12
+ * [new tag]             3.2.13     -> 3.2.13
+ * [new tag]             3.2.14     -> 3.2.14
+ * [new tag]             3.2.2      -> 3.2.2
+ * [new tag]             3.2.3      -> 3.2.3
+ * [new tag]             3.2.4      -> 3.2.4
+ * [new tag]             3.2.5      -> 3.2.5
+ * [new tag]             3.2.6      -> 3.2.6
+ * [new tag]             3.2.7      -> 3.2.7
+ * [new tag]             3.2.8      -> 3.2.8
+ * [new tag]             3.2.9      -> 3.2.9
+HEAD is now at 1909d89d0 Merge pull request #12165 from Bo98/http-mirror
+==> Tapping homebrew/core
+remote: Enumerating objects: 1049889, done.
+remote: Counting objects: 100% (49/49), done.
+remote: Compressing objects: 100% (26/26), done.
+remote: Total 1049889 (delta 26), reused 46 (delta 23), pack-reused 1049840
+Receiving objects: 100% (1049889/1049889), 430.56 MiB | 4.55 MiB/s, done.
+Resolving deltas: 100% (720111/720111), done.
+From https://github.com/Homebrew/homebrew-core
+ * [new branch]              master     -> origin/master
+HEAD is now at 8642bf288fc sip: update 6.2.0 bottle.
+Warning: /opt/homebrew/bin is not in your PATH.
+  Instructions on how to configure your shell for Homebrew
+  can be found in the 'Next steps' section below.
+==> Installation successful!
+
+==> Homebrew has enabled anonymous aggregate formulae and cask analytics.
+Read the analytics documentation (and how to opt-out) here:
+  https://docs.brew.sh/Analytics
+No analytics data has been sent yet (or will be during this `install` run).
+
+==> Homebrew is run entirely by unpaid volunteers. Please consider donating:
+  https://github.com/Homebrew/brew#donations
+
+==> Next steps:
+- Run these two commands in your terminal to add Homebrew to your PATH:
+    echo 'eval "$(/opt/homebrew/bin/brew shellenv)"' >> /Users/maxime/.zprofile
+    eval "$(/opt/homebrew/bin/brew shellenv)"
+- Run `brew help` to get started
+- Further documentation: 
+    https://docs.brew.sh
+maxime@mac ~ %  echo 'eval "$(/opt/homebrew/bin/brew shellenv)"' >> /Users/maxime/.zprofile
+maxime@mac ~ % eval "$(/opt/homebrew/bin/brew shellenv)"
+maxime@mac ~ % echo $PATH                               
+/opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin
+maxime@mac ~ % brew install --HEAD usbmuxd
+brew install --HEAD libimobiledevice
+Warning: You are using macOS 12.
+We do not provide support for this pre-release version.
+You will encounter build failures with some formulae.
+Please create pull requests instead of asking for help on Homebrew's GitHub,
+Twitter or any other official channels. You are responsible for resolving
+any issues you experience while you are running this
+pre-release version.
+
+==> Downloading https://ghcr.io/v2/homebrew/core/m4/manifests/1.4.19
+######################################################################## 100.0%
+==> Downloading https://ghcr.io/v2/homebrew/core/m4/blobs/sha256:ea1be04e51645f9
+==> Downloading from https://pkg-containers.githubusercontent.com/ghcr1/blobs/sh
+######################################################################## 100.0%
+==> Downloading https://ghcr.io/v2/homebrew/core/autoconf/manifests/2.71
+######################################################################## 100.0%
+==> Downloading https://ghcr.io/v2/homebrew/core/autoconf/blobs/sha256:6279cc629
+==> Downloading from https://pkg-containers.githubusercontent.com/ghcr1/blobs/sh
+######################################################################## 100.0%
+==> Downloading https://ghcr.io/v2/homebrew/core/automake/manifests/1.16.4
+######################################################################## 100.0%
+==> Downloading https://ghcr.io/v2/homebrew/core/automake/blobs/sha256:8e1bc79fe
+==> Downloading from https://pkg-containers.githubusercontent.com/ghcr1/blobs/sh
+######################################################################## 100.0%
+==> Downloading https://ghcr.io/v2/homebrew/core/libtool/manifests/2.4.6_4
+######################################################################## 100.0%
+==> Downloading https://ghcr.io/v2/homebrew/core/libtool/blobs/sha256:a41a4872cd
+==> Downloading from https://pkg-containers.githubusercontent.com/ghcr1/blobs/sh
+######################################################################## 100.0%
+==> Downloading https://ghcr.io/v2/homebrew/core/pkg-config/manifests/0.29.2_3
+######################################################################## 100.0%
+==> Downloading https://ghcr.io/v2/homebrew/core/pkg-config/blobs/sha256:ffd4491
+==> Downloading from https://pkg-containers.githubusercontent.com/ghcr1/blobs/sh
+######################################################################## 100.0%
+==> Downloading https://ghcr.io/v2/homebrew/core/libplist/manifests/2.2.0
+######################################################################## 100.0%
+==> Downloading https://ghcr.io/v2/homebrew/core/libplist/blobs/sha256:ed9c2d665
+==> Downloading from https://pkg-containers.githubusercontent.com/ghcr1/blobs/sh
+######################################################################## 100.0%
+==> Downloading https://ghcr.io/v2/homebrew/core/libusb/manifests/1.0.24
+######################################################################## 100.0%
+==> Downloading https://ghcr.io/v2/homebrew/core/libusb/blobs/sha256:1c40f644507
+==> Downloading from https://pkg-containers.githubusercontent.com/ghcr1/blobs/sh
+######################################################################## 100.0%
+==> Cloning https://github.com/libimobiledevice/libusbmuxd.git
+Cloning into '/Users/maxime/Library/Caches/Homebrew/libusbmuxd--git'...
+==> Checking out branch master
+Already on 'master'
+Your branch is up to date with 'origin/master'.
+Error: Your Command Line Tools (CLT) does not support macOS 12.
+It is either outdated or was modified.
+Please update your Command Line Tools (CLT) or delete it if no updates are available.
+Update them from Software Update in System Preferences or run:
+  softwareupdate --all --install --force
+
+If that doesn't show you any updates, run:
+  sudo rm -rf /Library/Developer/CommandLineTools
+  sudo xcode-select --install
+
+Alternatively, manually download them from:
+  https://developer.apple.com/download/more/.
+You should download the Command Line Tools for Xcode 13.0.
+
+Warning: You are using macOS 12.
+We do not provide support for this pre-release version.
+You will encounter build failures with some formulae.
+Please create pull requests instead of asking for help on Homebrew's GitHub,
+Twitter or any other official channels. You are responsible for resolving
+any issues you experience while you are running this
+pre-release version.
+
+==> Downloading https://ghcr.io/v2/homebrew/core/m4/manifests/1.4.19
+Already downloaded: /Users/maxime/Library/Caches/Homebrew/downloads/5b2a7f715487b7377e409e8ca58569040cd89f33859f691210c58d94410fd33b--m4-1.4.19.bottle_manifest.json
+==> Downloading https://ghcr.io/v2/homebrew/core/m4/blobs/sha256:ea1be04e51645f9
+Already downloaded: /Users/maxime/Library/Caches/Homebrew/downloads/836c804576ab1319964fa3a071f977ee8c742c4598c2e127cf4076a2a12df9d2--m4--1.4.19.arm64_big_sur.bottle.tar.gz
+==> Downloading https://ghcr.io/v2/homebrew/core/autoconf/manifests/2.71
+Already downloaded: /Users/maxime/Library/Caches/Homebrew/downloads/057cde2b686872aeeff2e91dc36d037807d7342dd50929fbdfea8bcc572fbed0--autoconf-2.71.bottle_manifest.json
+==> Downloading https://ghcr.io/v2/homebrew/core/autoconf/blobs/sha256:6279cc629
+Already downloaded: /Users/maxime/Library/Caches/Homebrew/downloads/281fb2889f8f3b772530c746f8f83bd30b344704b000a9340b1b764ccbb3ee6e--autoconf--2.71.arm64_big_sur.bottle.tar.gz
+==> Downloading https://ghcr.io/v2/homebrew/core/automake/manifests/1.16.4
+Already downloaded: /Users/maxime/Library/Caches/Homebrew/downloads/aca34e8f9d6823fa3816be83d896cfff41cd2240a4d8a62315c45bc44ee87897--automake-1.16.4.bottle_manifest.json
+==> Downloading https://ghcr.io/v2/homebrew/core/automake/blobs/sha256:8e1bc79fe
+Already downloaded: /Users/maxime/Library/Caches/Homebrew/downloads/cc5c3e86648ce49452f7de1a3c1eabf2d8c6ee5370b28cdd2b77fb81f024f9cc--automake--1.16.4.arm64_big_sur.bottle.tar.gz
+==> Downloading https://ghcr.io/v2/homebrew/core/libtool/manifests/2.4.6_4
+Already downloaded: /Users/maxime/Library/Caches/Homebrew/downloads/bcd85538886b3ea326aaffb13dda86069a6e8906ff0d950d0838ea938751f29b--libtool-2.4.6_4.bottle_manifest.json
+==> Downloading https://ghcr.io/v2/homebrew/core/libtool/blobs/sha256:a41a4872cd
+Already downloaded: /Users/maxime/Library/Caches/Homebrew/downloads/d1b766832ca5dfd1b4e148f03baf33592413ee8108acb7f785fa68d21ac32f49--libtool--2.4.6_4.arm64_big_sur.bottle.tar.gz
+==> Downloading https://ghcr.io/v2/homebrew/core/pkg-config/manifests/0.29.2_3
+Already downloaded: /Users/maxime/Library/Caches/Homebrew/downloads/ac691fc7ab8ecffba32a837e7197101d271474a3a84cfddcc30c9fd6763ab3c6--pkg-config-0.29.2_3.bottle_manifest.json
+==> Downloading https://ghcr.io/v2/homebrew/core/pkg-config/blobs/sha256:ffd4491
+Already downloaded: /Users/maxime/Library/Caches/Homebrew/downloads/58f2cdf84a723310759906c288ed66604a30dbd7b9dc3f884748632b772e2c19--pkg-config--0.29.2_3.arm64_big_sur.bottle.tar.gz
+==> Downloading https://ghcr.io/v2/homebrew/core/libplist/manifests/2.2.0
+Already downloaded: /Users/maxime/Library/Caches/Homebrew/downloads/5af96011c9f7b4884c9675d8bdd4db158a61dc2870f7c1c4aba588c9bf887725--libplist-2.2.0.bottle_manifest.json
+==> Downloading https://ghcr.io/v2/homebrew/core/libplist/blobs/sha256:ed9c2d665
+Already downloaded: /Users/maxime/Library/Caches/Homebrew/downloads/4a541f53f99f2c2c6293c37b725c239b0cfce55abf385ccd701e8136f5074fd4--libplist--2.2.0.arm64_big_sur.bottle.tar.gz
+==> Downloading https://ghcr.io/v2/homebrew/core/libtasn1/manifests/4.17.0
+######################################################################## 100.0%
+==> Downloading https://ghcr.io/v2/homebrew/core/libtasn1/blobs/sha256:8b8ba758c
+==> Downloading from https://pkg-containers.githubusercontent.com/ghcr1/blobs/sh
+######################################################################## 100.0%
+==> Downloading https://ghcr.io/v2/homebrew/core/libusb/manifests/1.0.24
+Already downloaded: /Users/maxime/Library/Caches/Homebrew/downloads/a742820e4e57061f1c9699d362d6562c0f686e4d1f4b7f61a544164364b2ec42--libusb-1.0.24.bottle_manifest.json
+==> Downloading https://ghcr.io/v2/homebrew/core/libusb/blobs/sha256:1c40f644507
+Already downloaded: /Users/maxime/Library/Caches/Homebrew/downloads/5d5677bddc9d55f118152880d5ae93bfb391565ce41862836b5b3de27e097202--libusb--1.0.24.arm64_big_sur.bottle.tar.gz
+==> Downloading https://ghcr.io/v2/homebrew/core/libusbmuxd/manifests/2.0.2
+######################################################################## 100.0%
+==> Downloading https://ghcr.io/v2/homebrew/core/libusbmuxd/blobs/sha256:9cd9d1d
+==> Downloading from https://pkg-containers.githubusercontent.com/ghcr1/blobs/sh
+######################################################################## 100.0%
+==> Downloading https://ghcr.io/v2/homebrew/core/openssl/1.1/manifests/1.1.1l
+######################################################################## 100.0%
+==> Downloading https://ghcr.io/v2/homebrew/core/openssl/1.1/blobs/sha256:9acf35
+==> Downloading from https://pkg-containers.githubusercontent.com/ghcr1/blobs/sh
+######################################################################## 100.0%
+==> Cloning https://git.libimobiledevice.org/libimobiledevice.git
+Cloning into '/Users/maxime/Library/Caches/Homebrew/libimobiledevice--git'...
+==> Checking out branch master
+Already on 'master'
+Your branch is up to date with 'origin/master'.
+Error: Your Command Line Tools (CLT) does not support macOS 12.
+It is either outdated or was modified.
+Please update your Command Line Tools (CLT) or delete it if no updates are available.
+Update them from Software Update in System Preferences or run:
+  softwareupdate --all --install --force
+
+If that doesn't show you any updates, run:
+  sudo rm -rf /Library/Developer/CommandLineTools
+  sudo xcode-select --install
+
+Alternatively, manually download them from:
+  https://developer.apple.com/download/more/.
+You should download the Command Line Tools for Xcode 13.0.
+
+maxime@mac ~ % softwareupdate --all --install --force
+Software Update Tool
+
+Finding available software
+No updates are available.
+maxime@mac ~ % 
+  [Restored 3 Oct 2021 at 21:42:57]
+Last login: Sun Oct  3 21:42:54 on console
+Restored session: Sun Oct  3 21:42:18 CEST 2021
+maxime@mac ~ % sudo rm -rf /Library/Developer/CommandLineTools
+Password:
+maxime@mac ~ %  sudo xcode-select --install
+
+xcode-select: note: install requested for command line developer tools
+maxime@mac ~ % brew install --HEAD usbmuxd           
+brew install --HEAD libimobiledevice
+Warning: You are using macOS 12.
+We do not provide support for this pre-release version.
+You will encounter build failures with some formulae.
+Please create pull requests instead of asking for help on Homebrew's GitHub,
+Twitter or any other official channels. You are responsible for resolving
+any issues you experience while you are running this
+pre-release version.
+
+==> Downloading https://ghcr.io/v2/homebrew/core/m4/manifests/1.4.19
+Already downloaded: /Users/maxime/Library/Caches/Homebrew/downloads/5b2a7f715487b7377e409e8ca58569040cd89f33859f691210c58d94410fd33b--m4-1.4.19.bottle_manifest.json
+==> Downloading https://ghcr.io/v2/homebrew/core/m4/blobs/sha256:ea1be04e51645f9
+Already downloaded: /Users/maxime/Library/Caches/Homebrew/downloads/836c804576ab1319964fa3a071f977ee8c742c4598c2e127cf4076a2a12df9d2--m4--1.4.19.arm64_big_sur.bottle.tar.gz
+==> Downloading https://ghcr.io/v2/homebrew/core/autoconf/manifests/2.71
+Already downloaded: /Users/maxime/Library/Caches/Homebrew/downloads/057cde2b686872aeeff2e91dc36d037807d7342dd50929fbdfea8bcc572fbed0--autoconf-2.71.bottle_manifest.json
+==> Downloading https://ghcr.io/v2/homebrew/core/autoconf/blobs/sha256:6279cc629
+Already downloaded: /Users/maxime/Library/Caches/Homebrew/downloads/281fb2889f8f3b772530c746f8f83bd30b344704b000a9340b1b764ccbb3ee6e--autoconf--2.71.arm64_big_sur.bottle.tar.gz
+==> Downloading https://ghcr.io/v2/homebrew/core/automake/manifests/1.16.4
+Already downloaded: /Users/maxime/Library/Caches/Homebrew/downloads/aca34e8f9d6823fa3816be83d896cfff41cd2240a4d8a62315c45bc44ee87897--automake-1.16.4.bottle_manifest.json
+==> Downloading https://ghcr.io/v2/homebrew/core/automake/blobs/sha256:8e1bc79fe
+Already downloaded: /Users/maxime/Library/Caches/Homebrew/downloads/cc5c3e86648ce49452f7de1a3c1eabf2d8c6ee5370b28cdd2b77fb81f024f9cc--automake--1.16.4.arm64_big_sur.bottle.tar.gz
+==> Downloading https://ghcr.io/v2/homebrew/core/libtool/manifests/2.4.6_4
+Already downloaded: /Users/maxime/Library/Caches/Homebrew/downloads/bcd85538886b3ea326aaffb13dda86069a6e8906ff0d950d0838ea938751f29b--libtool-2.4.6_4.bottle_manifest.json
+==> Downloading https://ghcr.io/v2/homebrew/core/libtool/blobs/sha256:a41a4872cd
+Already downloaded: /Users/maxime/Library/Caches/Homebrew/downloads/d1b766832ca5dfd1b4e148f03baf33592413ee8108acb7f785fa68d21ac32f49--libtool--2.4.6_4.arm64_big_sur.bottle.tar.gz
+==> Downloading https://ghcr.io/v2/homebrew/core/pkg-config/manifests/0.29.2_3
+Already downloaded: /Users/maxime/Library/Caches/Homebrew/downloads/ac691fc7ab8ecffba32a837e7197101d271474a3a84cfddcc30c9fd6763ab3c6--pkg-config-0.29.2_3.bottle_manifest.json
+==> Downloading https://ghcr.io/v2/homebrew/core/pkg-config/blobs/sha256:ffd4491
+Already downloaded: /Users/maxime/Library/Caches/Homebrew/downloads/58f2cdf84a723310759906c288ed66604a30dbd7b9dc3f884748632b772e2c19--pkg-config--0.29.2_3.arm64_big_sur.bottle.tar.gz
+==> Downloading https://ghcr.io/v2/homebrew/core/libplist/manifests/2.2.0
+Already downloaded: /Users/maxime/Library/Caches/Homebrew/downloads/5af96011c9f7b4884c9675d8bdd4db158a61dc2870f7c1c4aba588c9bf887725--libplist-2.2.0.bottle_manifest.json
+==> Downloading https://ghcr.io/v2/homebrew/core/libplist/blobs/sha256:ed9c2d665
+Already downloaded: /Users/maxime/Library/Caches/Homebrew/downloads/4a541f53f99f2c2c6293c37b725c239b0cfce55abf385ccd701e8136f5074fd4--libplist--2.2.0.arm64_big_sur.bottle.tar.gz
+==> Downloading https://ghcr.io/v2/homebrew/core/libusb/manifests/1.0.24
+Already downloaded: /Users/maxime/Library/Caches/Homebrew/downloads/a742820e4e57061f1c9699d362d6562c0f686e4d1f4b7f61a544164364b2ec42--libusb-1.0.24.bottle_manifest.json
+==> Downloading https://ghcr.io/v2/homebrew/core/libusb/blobs/sha256:1c40f644507
+Already downloaded: /Users/maxime/Library/Caches/Homebrew/downloads/5d5677bddc9d55f118152880d5ae93bfb391565ce41862836b5b3de27e097202--libusb--1.0.24.arm64_big_sur.bottle.tar.gz
+==> Cloning https://github.com/libimobiledevice/libusbmuxd.git
+Updating /Users/maxime/Library/Caches/Homebrew/libusbmuxd--git
+==> Checking out branch master
+Already on 'master'
+Your branch is up to date with 'origin/master'.
+HEAD is now at 2ec5354 [github-actions] macOS: build for arm64 too
+Warning: A newer Command Line Tools release is available.
+Update them from Software Update in System Preferences or run:
+  softwareupdate --all --install --force
+
+If that doesn't show you any updates, run:
+  sudo rm -rf /Library/Developer/CommandLineTools
+  sudo xcode-select --install
+
+Alternatively, manually download them from:
+  https://developer.apple.com/download/more/.
+You should download the Command Line Tools for Xcode 13.0.
+
+==> Installing dependencies for libusbmuxd: m4, autoconf, automake, libtool, pkg-config, libplist and libusb
+==> Installing libusbmuxd dependency: m4
+==> Pouring m4--1.4.19.arm64_big_sur.bottle.tar.gz
+🍺  /opt/homebrew/Cellar/m4/1.4.19: 13 files, 726.3KB
+==> Installing libusbmuxd dependency: autoconf
+==> Pouring autoconf--2.71.arm64_big_sur.bottle.tar.gz
+🍺  /opt/homebrew/Cellar/autoconf/2.71: 71 files, 3.2MB
+==> Installing libusbmuxd dependency: automake
+==> Pouring automake--1.16.4.arm64_big_sur.bottle.tar.gz
+🍺  /opt/homebrew/Cellar/automake/1.16.4: 131 files, 3.4MB
+==> Installing libusbmuxd dependency: libtool
+==> Pouring libtool--2.4.6_4.arm64_big_sur.bottle.tar.gz
+🍺  /opt/homebrew/Cellar/libtool/2.4.6_4: 75 files, 3.7MB
+==> Installing libusbmuxd dependency: pkg-config
+==> Pouring pkg-config--0.29.2_3.arm64_big_sur.bottle.tar.gz
+🍺  /opt/homebrew/Cellar/pkg-config/0.29.2_3: 11 files, 677.1KB
+==> Installing libusbmuxd dependency: libplist
+==> Pouring libplist--2.2.0.arm64_big_sur.bottle.tar.gz
+🍺  /opt/homebrew/Cellar/libplist/2.2.0: 31 files, 557.6KB
+==> Installing libusbmuxd dependency: libusb
+==> Pouring libusb--1.0.24.arm64_big_sur.bottle.tar.gz
+🍺  /opt/homebrew/Cellar/libusb/1.0.24: 22 files, 560.5KB
+==> Installing libusbmuxd --HEAD
+==> ./autogen.sh
+Last 15 lines from /Users/maxime/Library/Logs/Homebrew/libusbmuxd/01.autogen.sh:
+checking whether to build static libraries... yes
+checking for pkg-config... /opt/homebrew/Library/Homebrew/shims/mac/super/pkg-config
+checking pkg-config is at least version 0.9.0... yes
+checking for libplist-2.0 >= 2.2.0... yes
+checking for libimobiledevice-glue-1.0 >= 1.0.0... no
+configure: error: Package requirements (libimobiledevice-glue-1.0 >= 1.0.0) were not met:
+
+No package 'libimobiledevice-glue-1.0' found
+
+Consider adjusting the PKG_CONFIG_PATH environment variable if you
+installed software in a non-standard prefix.
+
+Alternatively, you may set the environment variables limd_glue_CFLAGS
+and limd_glue_LIBS to avoid the need to call pkg-config.
+See the pkg-config man page for more details.
+
+Do not report this issue to Homebrew/brew or Homebrew/core!
+
+
+Error: You are using macOS 12.
+We do not provide support for this pre-release version.
+You will encounter build failures with some formulae.
+Please create pull requests instead of asking for help on Homebrew's GitHub,
+Twitter or any other official channels. You are responsible for resolving
+any issues you experience while you are running this
+pre-release version.
+
+
+Error: A newer Command Line Tools release is available.
+Update them from Software Update in System Preferences or run:
+  softwareupdate --all --install --force
+
+If that doesn't show you any updates, run:
+  sudo rm -rf /Library/Developer/CommandLineTools
+  sudo xcode-select --install
+
+Alternatively, manually download them from:
+  https://developer.apple.com/download/more/.
+You should download the Command Line Tools for Xcode 13.0.
+
+Please create pull requests instead of asking for help on Homebrew's GitHub,
+Twitter or any other official channels.
+Warning: You are using macOS 12.
+We do not provide support for this pre-release version.
+You will encounter build failures with some formulae.
+Please create pull requests instead of asking for help on Homebrew's GitHub,
+Twitter or any other official channels. You are responsible for resolving
+any issues you experience while you are running this
+pre-release version.
+
+==> Downloading https://ghcr.io/v2/homebrew/core/libtasn1/manifests/4.17.0
+Already downloaded: /Users/maxime/Library/Caches/Homebrew/downloads/b8db7f6ac2eeccbeb4b809750a552cb1e3e02185b9b3436db6137babe9a4a7e3--libtasn1-4.17.0.bottle_manifest.json
+==> Downloading https://ghcr.io/v2/homebrew/core/libtasn1/blobs/sha256:8b8ba758c
+Already downloaded: /Users/maxime/Library/Caches/Homebrew/downloads/25235d0a62fbd18305d004fcfc2b8a3c89cb7bfa3cde44d0b1095271d5ba610a--libtasn1--4.17.0.arm64_big_sur.bottle.tar.gz
+==> Downloading https://ghcr.io/v2/homebrew/core/libusbmuxd/manifests/2.0.2
+Already downloaded: /Users/maxime/Library/Caches/Homebrew/downloads/b04d190163aa95650d98103cd7e0009c92aa3072888d2981b9b189dc3946421e--libusbmuxd-2.0.2.bottle_manifest.json
+==> Downloading https://ghcr.io/v2/homebrew/core/libusbmuxd/blobs/sha256:9cd9d1d
+Already downloaded: /Users/maxime/Library/Caches/Homebrew/downloads/18fedf2c3f048c84d53b9debb25bc7c7b4e8d2aa59e3473c010c62a96462f81e--libusbmuxd--2.0.2.arm64_big_sur.bottle.tar.gz
+==> Downloading https://ghcr.io/v2/homebrew/core/openssl/1.1/manifests/1.1.1l
+Already downloaded: /Users/maxime/Library/Caches/Homebrew/downloads/7cb540b15662ae88caf307947df0254e5c64c04933630f7e9543cb018107ecbe--openssl@1.1-1.1.1l.bottle_manifest.json
+==> Downloading https://ghcr.io/v2/homebrew/core/openssl/1.1/blobs/sha256:9acf35
+Already downloaded: /Users/maxime/Library/Caches/Homebrew/downloads/c5ed1fb55df51baa69a2294dd1b682ea826e5b26986425052f258bba30a26c81--openssl@1.1--1.1.1l.arm64_big_sur.bottle.tar.gz
+==> Cloning https://git.libimobiledevice.org/libimobiledevice.git
+Updating /Users/maxime/Library/Caches/Homebrew/libimobiledevice--git
+==> Checking out branch master
+Already on 'master'
+Your branch is up to date with 'origin/master'.
+HEAD is now at b3d35fb configure: Revert accidentally committed change with git-version-gen
+Warning: A newer Command Line Tools release is available.
+Update them from Software Update in System Preferences or run:
+  softwareupdate --all --install --force
+
+If that doesn't show you any updates, run:
+  sudo rm -rf /Library/Developer/CommandLineTools
+  sudo xcode-select --install
+
+Alternatively, manually download them from:
+  https://developer.apple.com/download/more/.
+You should download the Command Line Tools for Xcode 13.0.
+
+==> Installing dependencies for libimobiledevice: libtasn1, libusbmuxd and openssl@1.1
+==> Installing libimobiledevice dependency: libtasn1
+==> Pouring libtasn1--4.17.0.arm64_big_sur.bottle.tar.gz
+🍺  /opt/homebrew/Cellar/libtasn1/4.17.0: 61 files, 701KB
+==> Installing libimobiledevice dependency: libusbmuxd
+==> Pouring libusbmuxd--2.0.2.arm64_big_sur.bottle.tar.gz
+🍺  /opt/homebrew/Cellar/libusbmuxd/2.0.2: 16 files, 354.9KB
+==> Installing libimobiledevice dependency: openssl@1.1
+==> Pouring openssl@1.1--1.1.1l.arm64_big_sur.bottle.tar.gz
+==> Regenerating CA certificate bundle from keychain, this may take a while...
+🍺  /opt/homebrew/Cellar/openssl@1.1/1.1.1l: 8,073 files, 18MB
+==> Installing libimobiledevice --HEAD
+==> ./autogen.sh
+Last 15 lines from /Users/maxime/Library/Logs/Homebrew/libimobiledevice/01.autogen.sh:
+checking for pkg-config... /opt/homebrew/Library/Homebrew/shims/mac/super/pkg-config
+checking pkg-config is at least version 0.9.0... yes
+checking for libusbmuxd-2.0 >= 2.0.2... yes
+checking for libplist-2.0 >= 2.2.0... yes
+checking for libimobiledevice-glue-1.0 >= 1.0.0... no
+configure: error: Package requirements (libimobiledevice-glue-1.0 >= 1.0.0) were not met:
+
+No package 'libimobiledevice-glue-1.0' found
+
+Consider adjusting the PKG_CONFIG_PATH environment variable if you
+installed software in a non-standard prefix.
+
+Alternatively, you may set the environment variables limd_glue_CFLAGS
+and limd_glue_LIBS to avoid the need to call pkg-config.
+See the pkg-config man page for more details.
+
+Do not report this issue to Homebrew/brew or Homebrew/core!
+
+
+Error: You are using macOS 12.
+We do not provide support for this pre-release version.
+You will encounter build failures with some formulae.
+Please create pull requests instead of asking for help on Homebrew's GitHub,
+Twitter or any other official channels. You are responsible for resolving
+any issues you experience while you are running this
+pre-release version.
+
+
+Error: A newer Command Line Tools release is available.
+Update them from Software Update in System Preferences or run:
+  softwareupdate --all --install --force
+
+If that doesn't show you any updates, run:
+  sudo rm -rf /Library/Developer/CommandLineTools
+  sudo xcode-select --install
+
+Alternatively, manually download them from:
+  https://developer.apple.com/download/more/.
+You should download the Command Line Tools for Xcode 13.0.
+
+Please create pull requests instead of asking for help on Homebrew's GitHub,
+Twitter or any other official channels.
+maxime@mac ~ % brew install --HEAD usbmuxd
+brew install --HEAD libimobiledevice
+==> Homebrew is run entirely by unpaid volunteers. Please consider donating:
+  https://github.com/Homebrew/brew#donations
+==> Auto-updated Homebrew!
+Updated 1 tap (homebrew/core).
+==> Updated Formulae
+Updated 8 formulae.
+Updating Homebrew...
+
+Error: libusbmuxd 2.0.2 is already installed
+To install HEAD, first run:
+  brew unlink libusbmuxd
+Warning: You are using macOS 12.
+We do not provide support for this pre-release version.
+You will encounter build failures with some formulae.
+Please create pull requests instead of asking for help on Homebrew's GitHub,
+Twitter or any other official channels. You are responsible for resolving
+any issues you experience while you are running this
+pre-release version.
+
+==> Cloning https://git.libimobiledevice.org/libimobiledevice.git
+Updating /Users/maxime/Library/Caches/Homebrew/libimobiledevice--git
+==> Checking out branch master
+Already on 'master'
+Your branch is up to date with 'origin/master'.
+HEAD is now at b3d35fb configure: Revert accidentally committed change with git-version-gen
+Error: Your Command Line Tools (CLT) does not support macOS 12.
+It is either outdated or was modified.
+Please update your Command Line Tools (CLT) or delete it if no updates are available.
+Update them from Software Update in System Preferences or run:
+  softwareupdate --all --install --force
+
+If that doesn't show you any updates, run:
+  sudo rm -rf /Library/Developer/CommandLineTools
+  sudo xcode-select --install
+
+Alternatively, manually download them from:
+  https://developer.apple.com/download/more/.
+You should download the Command Line Tools for Xcode 13.0.
+
+maxime@mac ~ % brew install usbmuxd       
+Warning: libusbmuxd 2.0.2 is already installed and up-to-date.
+To reinstall 2.0.2, run:
+  brew reinstall libusbmuxd
+maxime@mac ~ % brew install limobileidevice
+==> Tapping homebrew/cask
+Cloning into '/opt/homebrew/Library/Taps/homebrew/homebrew-cask'...
+fatal: unable to access 'https://github.com/Homebrew/homebrew-cask/': Failed to connect to github.com port 443: Connection refused
+Error: Failure while executing; `git clone https://github.com/Homebrew/homebrew-cask /opt/homebrew/Library/Taps/homebrew/homebrew-cask --origin=origin --template=` exited with 128.
+maxime@mac ~ % brew install limobileidevice
+==> Tapping homebrew/cask
+Cloning into '/opt/homebrew/Library/Taps/homebrew/homebrew-cask'...
+fatal: unable to access 'https://github.com/Homebrew/homebrew-cask/': Failed to connect to github.com port 443: Connection refused
+Error: Failure while executing; `git clone https://github.com/Homebrew/homebrew-cask /opt/homebrew/Library/Taps/homebrew/homebrew-cask --origin=origin --template=` exited with 128.
+maxime@mac ~ % ping google.com
+PING google.com (192.168.1.1): 56 data bytes
+64 bytes from 192.168.1.1: icmp_seq=0 ttl=64 time=1.627 ms
+64 bytes from 192.168.1.1: icmp_seq=1 ttl=64 time=3.561 ms
+64 bytes from 192.168.1.1: icmp_seq=2 ttl=64 time=2.352 ms
+^C
+--- google.com ping statistics ---
+3 packets transmitted, 3 packets received, 0.0% packet loss
+round-trip min/avg/max/stddev = 1.627/2.513/3.561/0.798 ms
+maxime@mac ~ % ls
+Desktop		Downloads	Movies		Pictures
+Documents	Library		Music		Public
+maxime@mac ~ % brew bundle 
+==> Tapping homebrew/bundle
+Cloning into '/opt/homebrew/Library/Taps/homebrew/homebrew-bundle'...
+fatal: unable to access 'https://github.com/Homebrew/homebrew-bundle/': Failed to connect to github.com port 443: Connection refused
+Error: Failure while executing; `git clone https://github.com/Homebrew/homebrew-bundle /opt/homebrew/Library/Taps/homebrew/homebrew-bundle --origin=origin --template=` exited with 128.
+Error: Failure while executing; `/opt/homebrew/bin/brew tap homebrew/bundle` exited with 1.
+maxime@mac ~ % pwd
+/Users/maxime
+maxime@mac ~ % brew bundle
+==> Tapping homebrew/bundle
+Cloning into '/opt/homebrew/Library/Taps/homebrew/homebrew-bundle'...
+remote: Enumerating objects: 6265, done.
+remote: Counting objects: 100% (443/443), done.
+remote: Compressing objects: 100% (272/272), done.
+remote: Total 6265 (delta 203), reused 373 (delta 168), pack-reused 5822
+Receiving objects: 100% (6265/6265), 1.46 MiB | 1.05 MiB/s, done.
+Resolving deltas: 100% (3626/3626), done.
+Tapped 1 command (98 files, 1.8MB).
+Error: No Brewfile found
+maxime@mac ~ % brew bundle --brewfile=/Volumes/Samsung-T7/Projet/unattFactoReset/Brewfile
+Usage: brew bundle [subcommand]
+
+Bundler for non-Ruby dependencies from Homebrew, Homebrew Cask, Mac App Store
+and Whalebrew.
+
+brew bundle [install]:
+    Install and upgrade (by default) all dependencies from the Brewfile.
+
+You can specify the Brewfile location using --file or by setting the
+HOMEBREW_BUNDLE_FILE environment variable.
+
+You can skip the installation of dependencies by adding space-separated values
+to one or more of the following environment variables:
+HOMEBREW_BUNDLE_BREW_SKIP, HOMEBREW_BUNDLE_CASK_SKIP,
+HOMEBREW_BUNDLE_MAS_SKIP, HOMEBREW_BUNDLE_WHALEBREW_SKIP,
+HOMEBREW_BUNDLE_TAP_SKIP.
+
+brew bundle will output a Brewfile.lock.json in the same directory as the
+Brewfile if all dependencies are installed successfully. This contains
+dependency and system status information which can be useful in debugging brew
+bundle failures and replicating a "last known good build" state. You can
+opt-out of this behaviour by setting the HOMEBREW_BUNDLE_NO_LOCK environment
+variable or passing the --no-lock option. You may wish to check this file into
+the same version control system as your Brewfile (or ensure your version
+control system ignores it if you'd prefer to rely on debugging information from
+a local machine).
+
+brew bundle dump:
+    Write all installed casks/formulae/images/taps into a Brewfile in the
+current directory.
+
+brew bundle cleanup:
+    Uninstall all dependencies not listed from the Brewfile.
+
+This workflow is useful for maintainers or testers who regularly install lots of
+formulae.
+
+brew bundle check:
+    Check if all dependencies are installed from the Brewfile.
+
+This provides a successful exit code if everything is up-to-date, making it
+useful for scripting.
+
+brew bundle list:
+    List all dependencies present in the Brewfile.
+
+By default, only Homebrew dependencies are listed.
+
+brew bundle exec command:
+    Run an external command in an isolated build environment based on the
+Brewfile dependencies.
+
+This sanitized build environment ignores unrequested dependencies, which makes
+sure that things you didn't specify in your Brewfile won't get picked up by
+commands like bundle install, npm install, etc. It will also add compiler
+flags which will help find keg-only dependencies like openssl, icu4c, etc.
+
+      --file                       Read the Brewfile from this location. Use
+                                   --file=- to pipe to stdin/stdout.
+      --global                     Read the Brewfile from ~/.Brewfile.
+  -v, --verbose                    install prints output from commands as
+                                   they are run. check lists all missing
+                                   dependencies.
+      --no-upgrade                 install won't run brew upgrade on
+                                   outdated dependencies. Note they may still
+                                   be upgraded by brew install if needed.
+  -f, --force                      dump overwrites an existing Brewfile.
+                                   cleanup actually performs its cleanup
+                                   operations.
+      --cleanup                    install performs cleanup operation, same
+                                   as running cleanup --force.
+      --no-lock                    install won't output a
+                                   Brewfile.lock.json.
+      --all                        list all dependencies.
+      --formula, --brews           list Homebrew dependencies.
+      --cask, --casks              list Homebrew Cask dependencies.
+      --tap, --taps                list tap dependencies.
+      --mas                        list Mac App Store dependencies.
+      --whalebrew                  list Whalebrew dependencies.
+      --describe                   dump adds a description comment above
+                                   each line, unless the dependency does not
+                                   have a description.
+      --no-restart                 dump does not add restart_service to
+                                   formula lines.
+      --zap                        cleanup casks using the zap command
+                                   instead of uninstall.
+  -d, --debug                      Display any debugging information.
+  -q, --quiet                      Make some output more quiet.
+  -h, --help                       Show this message.
+Error: invalid option: --brewfile=/Volumes/Samsung-T7/Projet/unattFactoReset/Brewfile
+maxime@mac ~ % brew bundle --file=/Volumes/Samsung-T7/Projet/unattFactoReset/Brewfile    
+Tapping aerobounce/defaults.sh
+Using homebrew/bundle
+Tapping homebrew/cask
+Tapping homebrew/cask-drivers
+Tapping homebrew/cask-versions
+Using homebrew/core
+Tapping homebrew/cask-fonts
+Installing cask
+Installing ds
+Warning: You are using macOS 12.
+We do not provide support for this pre-release version.
+You will encounter build failures with some formulae.
+Please create pull requests instead of asking for help on Homebrew's GitHub,
+Twitter or any other official channels. You are responsible for resolving
+any issues you experience while you are running this
+pre-release version.
+
+==> Downloading https://github.com/aerobounce/defaults.sh/archive/2021.04.10.zip
+==> Downloading from https://codeload.github.com/aerobounce/defaults.sh/zip/2021.04.10
+Error: Your Command Line Tools (CLT) does not support macOS 12.
+It is either outdated or was modified.
+Please update your Command Line Tools (CLT) or delete it if no updates are available.
+Update them from Software Update in System Preferences or run:
+  softwareupdate --all --install --force
+
+If that doesn't show you any updates, run:
+  sudo rm -rf /Library/Developer/CommandLineTools
+  sudo xcode-select --install
+
+Alternatively, manually download them from:
+  https://developer.apple.com/download/more/.
+You should download the Command Line Tools for Xcode 13.0.
+
+Error: An exception occurred within a child process:
+  SystemExit: exit
+Installing ds has failed!
+Installing git
+Installing htop
+Installing jq
+Installing pup
+Installing lsusb
+Installing mas
+Installing node
+Installing nativefier
+Installing numpy
+Installing p7zip
+Installing rename
+Installing scipy
+Installing tree
+Installing wget
+Installing youtube-dl
+Installing adguard
+Password:
+Installing balenaetcher
+Installing cakebrew
+Installing chromedriver
+Installing chromium
+Installing db-browser-for-sqlite
+Installing firefox
+Installing github
+==> Downloading https://desktop.githubusercontent.com/github-desktop/releases/2.9.3-2c86f4d1/GitHubDesktop-arm64.zip
+curl: (55) LibreSSL SSL_write: Protocol wrong type for socket, errno 41
+Error: Download failed on Cask 'github' with message: Download failed: https://desktop.githubusercontent.com/github-desktop/releases/2.9.3-2c86f4d1/GitHubDesktop-arm64.zip
+Installing github has failed!
+Installing google-chrome
+Installing iterm2
+Installing logitech-options
+Password:
+Installing lulu
+Installing macfuse
+==> Caveats
+macfuse requires a kernel extension to work.
+If the installation fails, retry after you enable it in:
+  System Preferences → Security & Privacy → General
+
+For more information, refer to vendor documentation or this Apple Technical Note:
+  https://developer.apple.com/library/content/technotes/tn2459/_index.html
+
+==> Downloading https://github.com/osxfuse/osxfuse/releases/download/macfuse-4.1.2/macfuse-4.1.2.dmg
+==> Downloading from https://github-releases.githubusercontent.com/1867347/bef7db00-b69c-11eb-8f46-85e4f7a57751?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAIWNJYAX4CSVEH53A%2F20211003%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20211003T211116Z&X-Amz-Expires=300&X-Amz-Signature=06ea280f18cf02ccbfd49b00a7bd725fe8d1177aaaeca7676cf729f27df7f4cb&X-Amz-SignedHeaders=host&actor_id=0&key_id=0&repo_id=1867347&response-content-disposition=attachment%3B%20filename%3Dmacfuse-4.1.2.dmg&response-content-type=application%2Foctet-stream
+==> Installing Cask macfuse
+==> Running installer for macfuse; your password may be necessary.
+Package installers may write to any location; options such as `--appdir` are ignored.
+installer: Error - The macFUSE installation package is not compatible with this version of macOS.
+Error: Failure while executing; `/usr/bin/sudo -E -- /usr/bin/env LOGNAME=maxime USER=maxime USERNAME=maxime /usr/sbin/installer -pkg /opt/homebrew/Caskroom/macfuse/4.1.2/Extras/macFUSE\ 4.1.2.pkg -target /` exited with 1. Here's the output:
+installer: Error - The macFUSE installation package is not compatible with this version of macOS.
+==> Purging files for version 4.1.2 of Cask macfuse
+Installing macfuse has failed!
+Installing osxfuse
+==> Caveats
+`osxfuse` has been succeeded by `macfuse` as of version 4.0.0.
+
+To update to a newer version, do:
+  brew uninstall osxfuse
+  brew install macfuse
+
+osxfuse requires a kernel extension to work.
+If the installation fails, retry after you enable it in:
+  System Preferences → Security & Privacy → General
+
+For more information, refer to vendor documentation or this Apple Technical Note:
+  https://developer.apple.com/library/content/technotes/tn2459/_index.html
+
+You must reboot for the installation of osxfuse to take effect.
+
+==> Downloading https://github.com/osxfuse/osxfuse/releases/download/osxfuse-3.11.2/osxfuse-3.11.2.dmg
+==> Downloading from https://github-releases.githubusercontent.com/1867347/ab8d9600-06f1-11eb-9e31-17e04b5951ce?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAIWNJYAX4CSVEH53A%2F20211003%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20211003T211122Z&X-Amz-Expires=300&X-Amz-Signature=d8d31e9f519a6d96464faad85b617613c1dbb85bc7ece47b35e51107c04718fe&X-Amz-SignedHeaders=host&actor_id=0&key_id=0&repo_id=1867347&response-content-disposition=attachment%3B%20filename%3Dosxfuse-3.11.2.dmg&response-content-type=application%2Foctet-stream
+==> Installing Cask osxfuse
+==> Running installer for osxfuse; your password may be necessary.
+Package installers may write to any location; options such as `--appdir` are ignored.
+installer: Error - The FUSE for macOS installation package is not compatible with this version of macOS.
+Error: Failure while executing; `/usr/bin/sudo -E -- /usr/bin/env LOGNAME=maxime USER=maxime USERNAME=maxime /usr/sbin/installer -pkg /opt/homebrew/Caskroom/osxfuse/3.11.2/Extras/FUSE\ for\ macOS\ 3.11.2.pkg -target /` exited with 1. Here's the output:
+installer: Error - The FUSE for macOS installation package is not compatible with this version of macOS.
+==> Purging files for version 3.11.2 of Cask osxfuse
+Installing osxfuse has failed!
+Installing raindropio
+Installing silentknight
+Installing sloth
+Installing spotify
+Installing sublime-text
+Installing transmission
+Installing vlc
+Installing vmware-fusion
+Password:
+Error: Unable to install Adobe Lightroom app. mas not signed in to Mac App Store.
+maxime@mac ~ % mas
+Available commands:
+
+   account     Prints the primary account Apple ID
+   help        Display general or command-specific help
+   home        Opens MAS Preview app page in a browser
+   info        Display app information from the Mac App Store
+   install     Install from the Mac App Store
+   list        Lists apps from the Mac App Store which are currently installed
+   lucky       Install the first result from the Mac App Store
+   open        Opens app page in AppStore.app
+   outdated    Lists pending updates from the Mac App Store
+   purchase    Purchase and download free apps from the Mac App Store
+   reset       Resets the Mac App Store
+   search      Search for apps from the Mac App Store
+   signin      Sign in to the Mac App Store
+   signout     Sign out of the Mac App Store
+   uninstall   Uninstall app installed from the Mac App Store
+   upgrade     Upgrade outdated apps from the Mac App Store
+   vendor      Opens vendor's app page in a browser
+   version     Print version number
+maxime@mac ~ % mas signin
+Missing argument for Apple ID
+maxime@mac ~ % mas signin maximebories@icloud.com
+Error: The 'signin' command has been disabled on this macOS version. Please sign into the Mac App Store app manually.
+For more info see: https://github.com/mas-cli/mas/issues/164
+maxime@mac ~ % brew install google-chrome
+Updating Homebrew...
+==> Auto-updated Homebrew!
+Updated 4 taps (homebrew/cask-versions, homebrew/core, homebrew/cask and homebrew/cask-drivers).
+==> Updated Formulae
+Updated 2 formulae.
+==> Updated Casks
+Updated 15 casks.
+
+Warning: Cask 'google-chrome' is already installed.
+
+To re-install google-chrome, run:
+  brew reinstall google-chrome
+maxime@mac ~ % breaw install github
+zsh: command not found: breaw
+maxime@mac ~ % breaw install github
+zsh: command not found: breaw
+maxime@mac ~ % brew install github 
+==> Downloading https://desktop.githubusercontent.com/github-desktop/releases/2.9.3-2c86f4d1/GitHubDesktop-arm64.zip
+######################################################################## 100.0%
+==> Installing Cask github
+==> Moving App 'GitHub Desktop.app' to '/Applications/GitHub Desktop.app'
+==> Linking Binary 'github.sh' to '/opt/homebrew/bin/github'
+🍺  github was successfully installed!
+maxime@mac ~ % % env
+fg: no current job
+maxime@mac ~ % env
+__CFBundleIdentifier=com.apple.Terminal
+TMPDIR=/var/folders/wp/ppl26zcx70s5z_ly5gc_h5y40000gn/T/
+XPC_FLAGS=0x0
+LaunchInstanceID=FDD467A2-1761-489E-AB79-9F0A05FF6A0A
+TERM=xterm-256color
+SSH_AUTH_SOCK=/private/tmp/com.apple.launchd.TZjepM5Fhp/Listeners
+SECURITYSESSIONID=186a5
+XPC_SERVICE_NAME=0
+TERM_PROGRAM=Apple_Terminal
+TERM_PROGRAM_VERSION=443
+TERM_SESSION_ID=2E855B9D-2A40-4EF6-8117-9C6CAED5BED2
+SHELL=/bin/zsh
+HOME=/Users/maxime
+LOGNAME=maxime
+USER=maxime
+PATH=/opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin
+SHLVL=1
+PWD=/Users/maxime
+OLDPWD=/Users/maxime
+HOMEBREW_PREFIX=/opt/homebrew
+HOMEBREW_CELLAR=/opt/homebrew/Cellar
+HOMEBREW_REPOSITORY=/opt/homebrew
+HOMEBREW_SHELLENV_PREFIX=/opt/homebrew
+MANPATH=/opt/homebrew/share/man::
+INFOPATH=/opt/homebrew/share/info:
+LC_CTYPE=UTF-8
+_=/usr/bin/env
+maxime@mac ~ % cd /Applications/Flight\ Control\ HD.app/Contents/MacOS/                    
+maxime@mac MacOS % ./Flight\ Control\ HD 
+zsh: bad CPU type in executable: ./Flight Control HD
+maxime@mac MacOS % ./Flight\ Control\ HD
+zsh: bad CPU type in executable: ./Flight Control HD
+maxime@mac MacOS % brew search 128
+==> Formulae
+libebur128
+==> Casks
+font-libre-barcode-128                                                                             font-libre-barcode-128-text
+maxime@mac MacOS % brew install font-libre-barcode-128                                                                             font-libre-barcode-128-text
+Updating Homebrew...
+==> Auto-updated Homebrew!
+Updated 5 taps (homebrew/cask-versions, homebrew/core, homebrew/cask, homebrew/cask-fonts and homebrew/cask-drivers).
+==> New Formulae
+ca-certificates
+==> Updated Formulae
+Updated 27 formulae.
+==> Updated Casks
+Updated 11 casks.
+
+==> Downloading https://github.com/google/fonts/raw/main/ofl/librebarcode128/LibreBarcode128-Regular.ttf
+==> Downloading from https://raw.githubusercontent.com/google/fonts/main/ofl/librebarcode128/LibreBarcode128-Regular.ttf
+######################################################################## 100.0%
+Warning: No checksum defined for cask 'font-libre-barcode-128', skipping verification.
+==> Installing Cask font-libre-barcode-128
+==> Moving Font 'LibreBarcode128-Regular.ttf' to '/Users/maxime/Library/Fonts/LibreBarcode128-Regular.ttf'
+🍺  font-libre-barcode-128 was successfully installed!
+==> Downloading https://github.com/google/fonts/raw/main/ofl/librebarcode128text/LibreBarcode128Text-Regular.ttf
+==> Downloading from https://raw.githubusercontent.com/google/fonts/main/ofl/librebarcode128text/LibreBarcode128Text-Regular.ttf
+######################################################################## 100.0%
+Warning: No checksum defined for cask 'font-libre-barcode-128-text', skipping verification.
+==> Installing Cask font-libre-barcode-128-text
+==> Moving Font 'LibreBarcode128Text-Regular.ttf' to '/Users/maxime/Library/Fonts/LibreBarcode128Text-Regular.ttf'
+🍺  font-libre-barcode-128-text was successfully installed!
+maxime@mac MacOS % brew search SF-                                                                                                                            
+==> Formulae
+bsdsfv                csfml                 ems-flasher           jboss-forge           opusfile              physfs                sblim-sfcc            sfk                   transfig
+cksfv                 cvs-fast-export       gcsfuse               lensfun               php-cs-fixer          psftools              sf-pwgen              sfml                  vsftpd
+cmusfm                dosfstools            glassfish             libgsf                php-cs-fixer@2        rofs-filtered         sfcgal                sfst
+==> Casks
+android-file-transfer                  font-consolas-for-powerline            font-satisfy                           hocus-focus                            statusfy
+biopassfido                            font-jacques-francois                  font-sf-compact                        jollysfastvnc                          stringsfile
+cycliqplus-firmware-updater            font-jacques-francois-shadow           font-sf-mono                           macs-fan-control                       transfer
+daedalus-flight                        font-miss-fajardose                    font-sf-mono-for-powerline             sf-symbols                             whoozle-android-file-transfer
+elektron-transfer                      font-sans-forgetica                    font-sf-pro                            sfdx                                   whoozle-android-file-transfer-nightly
+maxime@mac MacOS % brew install font-sf*
+zsh: no matches found: font-sf*
+maxime@mac MacOS % brew install font-sf-*
+zsh: no matches found: font-sf-*
+maxime@mac MacOS % brew install font-sf-compact font-sf-mono font-sf-pro sf-symbols
+Updating Homebrew...
+==> Downloading https://devimages-cdn.apple.com/design/resources/download/SF-Compact.dmg
+######################################################################## 100.0%
+Warning: No checksum defined for cask 'font-sf-compact', skipping verification.
+==> Installing Cask font-sf-compact
+==> Running installer for font-sf-compact; your password may be necessary.
+Package installers may write to any location; options such as `--appdir` are ignored.
+Password:
+installer: Package name is San Francisco Compact Fonts
+installer: Installing at base path /
+installer: The install was successful.
+🍺  font-sf-compact was successfully installed!
+==> Downloading https://devimages-cdn.apple.com/design/resources/download/SF-Mono.dmg
+######################################################################## 100.0%
+Warning: No checksum defined for cask 'font-sf-mono', skipping verification.
+==> Installing Cask font-sf-mono
+==> Running installer for font-sf-mono; your password may be necessary.
+Package installers may write to any location; options such as `--appdir` are ignored.
+installer: Package name is SF Mono Fonts
+installer: Installing at base path /
+installer: The install was successful.
+🍺  font-sf-mono was successfully installed!
+==> Downloading https://devimages-cdn.apple.com/design/resources/download/SF-Pro.dmg
+######################################################################## 100.0%
+Warning: No checksum defined for cask 'font-sf-pro', skipping verification.
+==> Installing Cask font-sf-pro
+==> Running installer for font-sf-pro; your password may be necessary.
+Package installers may write to any location; options such as `--appdir` are ignored.
+installer: Package name is San Francisco Pro Fonts
+installer: Installing at base path /
+installer: The install was successful.
+🍺  font-sf-pro was successfully installed!
+==> Downloading https://devimages-cdn.apple.com/design/resources/download/SF-Symbols-3.dmg
+######################################################################## 100.0%
+==> Installing Cask sf-symbols
+==> Running installer for sf-symbols; your password may be necessary.
+Package installers may write to any location; options such as `--appdir` are ignored.
+installer: Package name is SF Symbols
+installer: Installing at base path /
+installer: The install was successful.
+🍺  sf-symbols was successfully installed!
+maxime@mac MacOS % brew search font-
+==> Formulae
+font-util                        fontconfig                       fontforge                        fonttools                        libfontenc                       libxfont
+==> Casks
+birdfont                                         font-exo-2                                       font-luckiest-guy                                font-pecita
+font-3270                                        font-expletus-sans                               font-luculent                                    font-peddana
+font-3270-nerd-font                              font-ezra-sil                                    font-lusitana                                    font-peralta
+font-437-plus                                    font-fahkwang                                    font-lustria                                     font-permanent-marker
+font-abeezee                                     font-fairfax                                     font-ma-shan-zheng                               font-petit-formal-script
+font-abel                                        font-fandol                                      font-macondo                                     font-petrona
+font-abhaya-libre                                font-fantasque-sans-mono                         font-macondo-swash-caps                          font-phetsarath
+font-aboriginal-sans                             font-fantasque-sans-mono-nerd-font               font-mada                                        font-philosopher
+font-aboriginal-serif                            font-fantasque-sans-mono-noloopk                 font-magra                                       font-piazzolla
+font-abril-fatface                               font-fanwood-text                                font-maiden-orange                               font-piedra
+font-abyssinica-sil                              font-farro                                       font-maitree                                     font-pigmo00
+font-academicons                                 font-farsan                                      font-major-mono-display                          font-pigmo01
+font-aclonica                                    font-fascinate                                   font-makinas4                                    font-pinyon-script
+font-acme                                        font-fascinate-inline                            font-mako                                        font-pirata-one
+font-actor                                       font-faster-one                                  font-mali                                        font-plaster
+font-adamina                                     font-fasthand                                    font-mallanna                                    font-play
+font-adinatha-tamil-brahmi                       font-fauna-one                                   font-mamelon                                     font-playball
+font-adobe-blank                                 font-faune                                       font-mandali                                     font-playfair-display
+font-advent-pro                                  font-faustina                                    font-manjari                                     font-playfair-display-sc
+font-african-sans                                font-faustina-vf-beta                            font-manrope                                     font-podkova
+font-african-serif                               font-federant                                    font-mansalva                                    font-podkova-vf-beta
+font-agave-nerd-font                             font-federo                                      font-manuale                                     font-poetsen-one
+font-aguafina-script                             font-felipa                                      font-marcellus                                   font-poiret-one
+font-ahuramzda                                   font-fenix                                       font-marcellus-sc                                font-poller-one
+font-aileron                                     font-festive                                     font-marck-script                                font-poly
+font-akaya-kanadaka                              font-finger-paint                                font-margarine                                   font-pompiere
+font-akaya-telivigala                            font-fira-code                                   font-markazi-text                                font-ponnala
+font-akronim                                     font-fira-code-nerd-font                         font-marko-one                                   font-pontano-sans
+font-aksara-bali-galang                          font-fira-mono                                   font-marmelad                                    font-poor-story
+font-aladin                                      font-fira-mono-for-powerline                     font-martel                                      font-poppins
+font-alata                                       font-fira-mono-nerd-font                         font-martel-sans                                 font-poppins-latin
+font-alatsi                                      font-fira-sans                                   font-marvel                                      font-poprumcute
+font-albertella                                  font-fira-sans-condensed                         font-masinahikan                                 font-port-lligat-sans
+font-aldrich                                     font-fira-sans-extra-condensed                   font-masinahikan-dene                            font-port-lligat-slab
+font-alef                                        font-firago                                      font-mate                                        font-porter-sans-block
+font-alegreya                                    font-fjalla-one                                  font-mate-sc                                     font-post-no-bills-colombo
+font-alegreya-sans                               font-fjord-one                                   font-material-design-icons-webfont               font-post-no-bills-jaffna
+font-alegreya-sans-sc                            font-flamenco                                    font-material-icons                              font-potta-one
+font-alegreya-sc                                 font-flavors                                     font-maven-pro                                   font-powerline-symbols
+font-aleo                                        font-fondamento                                  font-maven-pro-vf-beta                           font-pragati-narrow
+font-alex-brush                                  font-fontawesome                                 font-mclaren                                     font-prata
+font-alfa-slab-one                               font-fontdiner-swanky                            font-meddon                                      font-preahvihear
+font-alice                                       font-forum                                       font-medievalsharp                               font-press-start-2p
+font-alike                                       font-foundation-icons                            font-medula-one                                  font-pridi
+font-alike-angular                               font-foundry-sterling                            font-meera-inimai                                font-princess-sofia
+font-allan                                       font-francois-one                                font-megrim                                      font-prociono
+font-allerta                                     font-frank-ruhl-libre                            font-meie-script                                 font-profont-nerd-font
+font-allerta-stencil                             font-fraunces                                    font-meltho                                      font-profontx
+font-allison                                     font-freckle-face                                font-menlo-for-powerline                         font-proggy-clean-tt-nerd-font
+font-allura                                      font-fredericka-the-great                        font-merge-one                                   font-prompt
+font-almarai                                     font-fredoka-one                                 font-merienda                                    font-prosto-one
+font-almendra                                    font-free-mono-tengwar                           font-merienda-one                                font-proza-libre
+font-almendra-display                            font-freefont                                    font-merriweather                                font-pt-mono
+font-almendra-sc                                 font-freehand                                    font-merriweather-sans                           font-pt-sans
+font-alumni-sans                                 font-fresca                                      font-mervale-script                              font-pt-sans-caption
+font-amarante                                    font-frijole                                     font-meslo-for-powerline                         font-pt-sans-narrow
+font-amaranth                                    font-fruktur                                     font-meslo-lg                                    font-pt-serif
+font-amatic-sc                                   font-fugaz-one                                   font-meslo-lg-dz                                 font-pt-serif-caption
+font-amatica-sc                                  font-fuggles                                     font-meslo-lg-nerd-font                          font-public-sans
+font-amethysta                                   font-fzshusong-z01                               font-metal                                       font-puritan
+font-amiko                                       font-gabriela                                    font-metal-mania                                 font-purple-purse
+font-amiri                                       font-gaegu                                       font-metamorphous                                font-pushster
+font-amita                                       font-gafata                                      font-metrophobic                                 font-qahiri
+font-amstelvar-alpha                             font-galada                                      font-metropolis                                  font-quando
+font-anaheim                                     font-galdeano                                    font-miama                                       font-quantico
+font-andada                                      font-galindo                                     font-miao-unicode                                font-quattrocento
+font-andada-pro                                  font-gamja-flower                                font-michroma                                    font-quattrocento-sans
+font-andada-sc                                   font-gandhi-sans                                 font-migmix-1m                                   font-questrial
+font-andagii                                     font-gayathri                                    font-migmix-1p                                   font-quicksand
+font-andale-mono                                 font-gelasio                                     font-migmix-2m                                   font-quintessential
+font-andika                                      font-gemunu-libre                                font-migmix-2p                                   font-qwigley
+font-andika-new-basic                            font-genjyuugothic                               font-migu-1c                                     font-racing-sans-one
+font-andron-scriptor-web                         font-genjyuugothic-l                             font-migu-1m                                     font-radley
+font-angkor                                      font-genjyuugothic-x                             font-migu-1p                                     font-rajdhani
+font-anka-coder                                  font-genryumin                                   font-migu-2m                                     font-rakkas
+font-annie-use-your-telescope                    font-gensekigothic                               font-milonga                                     font-raleway
+font-anonymice-nerd-font                         font-gensenrounded                               font-miltonian                                   font-raleway-dots
+font-anonymice-powerline                         font-genshingothic                               font-miltonian-tattoo                            font-ramabhadra
+font-anonymous-pro                               font-gentium-basic                               font-mina                                        font-ramaraja
+font-antic                                       font-gentium-book-basic                          font-miniver                                     font-rambla
+font-antic-didone                                font-gentium-plus                                font-miriam-libre                                font-rammetto-one
+font-antic-slab                                  font-genwanmin                                   font-miriam-mono-clm                             font-rampart-one
+font-antinoou                                    font-genyogothic                                 font-mirza                                       font-ranchers
+font-anton                                       font-genyomin                                    font-miss-fajardose                              font-rancho
+font-antonio                                     font-geo                                         font-mitr                                        font-ranga
+font-aoboshi-one                                 font-georama                                     font-modak                                       font-rasa
+font-arapey                                      font-georgia                                     font-modern-antiqua                              font-rationale
+font-arbutus                                     font-geostar                                     font-mogra                                       font-ravi-prakash
+font-arbutus-slab                                font-geostar-fill                                font-mohave                                      font-recursive
+font-architects-daughter                         font-germania-one                                font-molengo                                     font-recursive-code
+font-architype-renner                            font-gfs-didot                                   font-molle                                       font-red-hat-display
+font-archivo                                     font-gfs-neohellenic                             font-monda                                       font-red-hat-mono
+font-archivo-black                               font-gidole                                      font-monofett                                    font-red-hat-text
+font-archivo-narrow                              font-gidugu                                      font-monofur-for-powerline                       font-red-rose
+font-archivo-vf-beta                             font-gilbert                                     font-monofur-nerd-font                           font-redacted
+font-aref-ruqaa                                  font-gilda-display                               font-monoid                                      font-redacted-script
+font-arial                                       font-girassol                                    font-monoid-nerd-font                            font-redhat
+font-arial-black                                 font-give-you-glory                              font-monoisome                                   font-redressed
+font-arima-madurai                               font-glass-antiqua                               font-monomaniac-one                              font-reem-kufi
+font-arimo                                       font-glegoo                                      font-mononoki                                    font-reenie-beanie
+font-arimo-nerd-font                             font-gloria-hallelujah                           font-mononoki-nerd-font                          font-reggae-one
+font-arizonia                                    font-glory                                       font-monoton                                     font-revalia
+font-armata                                      font-glow-sans-j-compressed                      font-monsieur-la-doulaise                        font-rhodium-libre
+font-arsenal                                     font-glow-sans-j-condensed                       font-montaga                                     font-ribeye
+font-artifika                                    font-glow-sans-j-extended                        font-montecarlo                                  font-ribeye-marrow
+font-arvo                                        font-glow-sans-j-normal                          font-montez                                      font-ricty-diminished
+font-arya                                        font-glow-sans-j-wide                            font-montserrat                                  font-righteous
+font-asap                                        font-glow-sans-sc-compressed                     font-montserrat-alternates                       font-risque
+font-asap-condensed                              font-glow-sans-sc-condensed                      font-montserrat-subrayada                        font-roboto
+font-asap-vf-beta                                font-glow-sans-sc-extended                       font-moul                                        font-roboto-mono
+font-asar                                        font-glow-sans-sc-normal                         font-moulpali                                    font-roboto-mono-for-powerline
+font-asset                                       font-glow-sans-sc-wide                           font-mountains-of-christmas                      font-roboto-mono-nerd-font
+font-assistant                                   font-glow-sans-tc-compressed                     font-mouse-memoirs                               font-roboto-slab
+font-astloch                                     font-glow-sans-tc-condensed                      font-mplus                                       font-rochester
+font-asul                                        font-glow-sans-tc-extended                       font-mplus-nerd-font                             font-rock-3d
+font-athiti                                      font-glow-sans-tc-normal                         font-mr-bedfort                                  font-rock-salt
+font-atkinson-hyperlegible                       font-glow-sans-tc-wide                           font-mr-dafoe                                    font-rocknroll-one
+font-atma                                        font-gnu-unifont                                 font-mr-de-haviland                              font-rokkitt
+font-atomic-age                                  font-go                                          font-mrs-saint-delafield                         font-rokkitt-vf-beta
+font-aubrey                                      font-go-mono-nerd-font                           font-mrs-sheppards                               font-romanesco
+font-audiowide                                   font-goblin-one                                  font-mukta                                       font-ronde
+font-aurulent-sans-mono-nerd-font                font-gochi-hand                                  font-mukta-mahee                                 font-ropa-sans
+font-autour-one                                  font-gohufont-nerd-font                          font-mukta-malar                                 font-rosario
+font-average                                     font-goldman                                     font-mukta-vaani                                 font-rosarivo
+font-average-mono                                font-gorditas                                    font-mukti-narrow                                font-rouge-script
+font-average-sans                                font-gothic-a1                                   font-mulish                                      font-rounded-mplus
+font-averia-gruesa-libre                         font-gotu                                        font-museo                                       font-routed-gothic
+font-averia-libre                                font-goudy-bookletter-1911                       font-museomoderno                                font-rowdies
+font-averia-sans-libre                           font-gowun-batang                                font-myanmar-sans-pro                            font-rozha-one
+font-averia-serif-libre                          font-gowun-dodum                                 font-myrica                                      font-rubik
+font-awesome-terminal-fonts                      font-graduate                                    font-myricam                                     font-rubik-mono-one
+font-azeret-mono                                 font-grand-hotel                                 font-mystery-quest                               font-rubik-one
+font-b612                                        font-grandstander                                font-n-gage                                      font-ruda
+font-b612-mono                                   font-gravitas-one                                font-nanum-brush-script                          font-rufina
+font-bad-script                                  font-great-vibes                                 font-nanum-gothic                                font-ruge-boogie
+font-bahiana                                     font-grenze                                      font-nanum-gothic-coding                         font-ruluko
+font-bahianita                                   font-grenze-gotisch                              font-nanum-myeongjo                              font-rum-raisin
+font-bahnschrift                                 font-griffy                                      font-nanum-pen-script                            font-ruserius
+font-bai-jamjuree                                font-gruppo                                      font-national-park                               font-ruslan-display
+font-ballet                                      font-gudea                                       font-nats                                        font-russo-one
+font-baloo                                       font-gugi                                        font-nerko-one                                   font-ruthie
+font-baloo-2                                     font-gupter                                      font-neucha                                      font-rye
+font-baloo-bhai-2                                font-gurajada                                    font-neuton                                      font-sacramento
+font-baloo-bhaina-2                              font-habibi                                      font-new-rocker                                  font-sahitya
+font-baloo-chettan-2                             font-hachi-maru-pop                              font-new-tegomin                                 font-sail
+font-baloo-da-2                                  font-hack                                        font-new-york                                    font-saira
+font-baloo-paaji-2                               font-hack-nerd-font                              font-news-cycle                                  font-saira-condensed
+font-baloo-tamma-2                               font-hackgen                                     font-newsreader                                  font-saira-extra-condensed
+font-baloo-tammudu-2                             font-hackgen-nerd                                font-nico-moji                                   font-saira-semi-condensed
+font-baloo-thambi-2                              font-hahmlet                                     font-niconne                                     font-saira-stencil-one
+font-balsamiq-sans                               font-halant                                      font-nikukyu                                     font-salsa
+font-balthazar                                   font-hammersmith-one                             font-nimbus-sans-l                               font-sanchez
+font-bangers                                     font-han-nom-a                                   font-niramit                                     font-sancreek
+font-barlow                                      font-hanalei                                     font-nixie-one                                   font-sans-forgetica
+font-barlow-condensed                            font-hanalei-fill                                font-nobile                                      font-sansation
+font-barlow-semi-condensed                       font-hanamina                                    font-nokora                                      font-sansita
+font-barriecito                                  font-handjet                                     font-norican                                     font-sansita-one
+font-barrio                                      font-handlee                                     font-nosifer                                     font-sansita-swashed
+font-basic                                       font-hannari                                     font-nosifer-caps                                font-sarabun
+font-baskervville                                font-hanuman                                     font-notable                                     font-sarala
+font-battambang                                  font-happy-monkey                                font-nothing-you-could-do                        font-sarasa-gothic
+font-baumans                                     font-harmattan                                   font-noticia-text                                font-sarina
+font-bayon                                       font-hasklig                                     font-noto-color-emoji                            font-sarpanch
+font-be-vietnam                                  font-hasklug-nerd-font                           font-noto-emoji                                  font-satisfy
+font-be-vietnam-pro                              font-headland-one                                font-noto-kufi-arabic                            font-sauce-code-pro-nerd-font
+font-bebas-neue                                  font-heavy-data-nerd-font                        font-noto-mono                                   font-sawarabi-gothic
+font-belgrano                                    font-heebo                                       font-noto-mono-for-powerline                     font-sawarabi-mincho
+font-bellefair                                   font-henny-penny                                 font-noto-music                                  font-scada
+font-belleza                                     font-hepta-slab                                  font-noto-naskh-arabic                           font-scheherazade
+font-bellota                                     font-hermeneus-one                               font-noto-naskh-arabic-ui                        font-scheherazade-new
+font-bellota-text                                font-herr-von-muellerhoff                        font-noto-nastaliq-urdu                          font-schoolbell
+font-benchnine                                   font-hi-melody                                   font-noto-nerd-font                              font-scope-one
+font-benne                                       font-hina-mincho                                 font-noto-rashi-hebrew                           font-seaweed-script
+font-bentham                                     font-hind                                        font-noto-sans                                   font-secular-one
+font-berkshire-swash                             font-hind-colombo                                font-noto-sans-adlam                             font-sedan
+font-besley                                      font-hind-guntur                                 font-noto-sans-adlam-unjoined                    font-sedan-sc
+font-beth-ellen                                  font-hind-jalandhar                              font-noto-sans-anatolian-hieroglyphs             font-sedgwick-ave
+font-bevan                                       font-hind-kochi                                  font-noto-sans-arabic                            font-sedgwick-ave-display
+font-bhavuka                                     font-hind-madurai                                font-noto-sans-arabic-ui                         font-sen
+font-big-shoulders-display                       font-hind-mysuru                                 font-noto-sans-armenian                          font-seoul-hangang
+font-big-shoulders-inline-display                font-hind-siliguri                               font-noto-sans-avestan                           font-seoul-hangang-condensed
+font-big-shoulders-inline-text                   font-hind-vadodara                               font-noto-sans-balinese                          font-seoul-namsan
+font-big-shoulders-stencil-display               font-holtwood-one-sc                             font-noto-sans-bamum                             font-seoul-namsan-condensed
+font-big-shoulders-stencil-text                  font-homemade-apple                              font-noto-sans-bassa-vah                         font-seoul-namsan-vertical
+font-big-shoulders-text                          font-homenaje                                    font-noto-sans-batak                             font-sevillana
+font-bigblue-terminal-nerd-font                  font-humor-sans                                  font-noto-sans-bengali                           font-seymour-one
+font-bigelow-rules                               font-hurmit-nerd-font                            font-noto-sans-bengali-ui                        font-sf-compact ✔
+font-bigshot-one                                 font-hyppolit                                    font-noto-sans-bhaiksuki                         font-sf-mono ✔
+font-bilbo                                       font-ia-writer-duo                               font-noto-sans-brahmi                            font-sf-mono-for-powerline
+font-bilbo-swash-caps                            font-ia-writer-duospace                          font-noto-sans-buginese                          font-sf-pro ✔
+font-bio-rhyme                                   font-ia-writer-mono                              font-noto-sans-buhid                             font-shadows-into-light
+font-bio-rhyme-expanded                          font-ia-writer-quattro                           font-noto-sans-canadian-aboriginal               font-shadows-into-light-two
+font-biryani                                     font-ibarra-real-nova                            font-noto-sans-carian                            font-shanti
+font-bitstream-vera                              font-ibm-plex                                    font-noto-sans-caucasian-albanian                font-share
+font-bitstream-vera-sans-mono-nerd-font          font-ibm-plex-mono                               font-noto-sans-chakma                            font-share-tech
+font-bitter                                      font-ibm-plex-sans                               font-noto-sans-cham                              font-share-tech-mono
+font-bitter-ht                                   font-ibm-plex-sans-arabic                        font-noto-sans-cherokee                          font-shippori-antique
+font-black-and-white-picture                     font-ibm-plex-sans-condensed                     font-noto-sans-cjk                               font-shippori-antique-b1
+font-black-han-sans                              font-ibm-plex-sans-devanagari                    font-noto-sans-cjk-jp                            font-shippori-mincho
+font-black-ops-one                               font-ibm-plex-sans-hebrew                        font-noto-sans-cjk-kr                            font-shippori-mincho-b1
+font-blackout                                    font-ibm-plex-sans-kr                            font-noto-sans-cjk-sc                            font-shizuru
+font-blex-mono-nerd-font                         font-ibm-plex-sans-thai                          font-noto-sans-cjk-tc                            font-shojumaru
+font-blinker                                     font-ibm-plex-sans-thai-looped                   font-noto-sans-coptic                            font-short-stack
+font-blokk-neue                                  font-ibm-plex-serif                              font-noto-sans-cuneiform                         font-shrikhand
+font-bm                                          font-iceberg                                     font-noto-sans-cypriot                           font-shure-tech-mono-nerd-font
+font-bodoni-moda                                 font-iceland                                     font-noto-sans-deseret                           font-siemreap
+font-bokor                                       font-icomoon                                     font-noto-sans-devanagari                        font-sigmar-one
+font-bona-nova                                   font-im-fell-double-pica                         font-noto-sans-devanagari-ui                     font-signika
+font-bonbon                                      font-im-fell-double-pica-sc                      font-noto-sans-display                           font-signika-negative
+font-boogaloo                                    font-im-fell-dw-pica                             font-noto-sans-duployan                          font-signika-negative-sc
+font-bowlby-one                                  font-im-fell-dw-pica-sc                          font-noto-sans-egyptian-hieroglyphs              font-signika-sc
+font-bowlby-one-sc                               font-im-fell-english                             font-noto-sans-elbasan                           font-simonetta
+font-brawler                                     font-im-fell-english-sc                          font-noto-sans-elymaic                           font-simple-line-icons
+font-bree-serif                                  font-im-fell-french-canon                        font-noto-sans-ethiopic                          font-single-day
+font-brill                                       font-im-fell-french-canon-sc                     font-noto-sans-georgian                          font-sintony
+font-bruno-ace                                   font-im-fell-great-primer                        font-noto-sans-glagolitic                        font-sirin-stencil
+font-bruno-ace-sc                                font-im-fell-great-primer-sc                     font-noto-sans-gothic                            font-sitara
+font-brygada-1918                                font-im-fell-types                               font-noto-sans-grantha                           font-six-caps
+font-bubblegum-sans                              font-im-writing-nerd-font                        font-noto-sans-gujarati                          font-skranji
+font-bubbler-one                                 font-imbue                                       font-noto-sans-gujarati-ui                       font-slabo-13px
+font-buda                                        font-impact                                      font-noto-sans-gunjala-gondi                     font-slabo-27px
+font-buenard                                     font-imprima                                     font-noto-sans-gurmukhi                          font-slackey
+font-bukyvede-bold                               font-inconsolata                                 font-noto-sans-gurmukhi-ui                       font-slackside-one
+font-bukyvede-italic                             font-inconsolata-dz-for-powerline                font-noto-sans-hanifi-rohingya                   font-smokum
+font-bukyvede-regular                            font-inconsolata-for-powerline                   font-noto-sans-hanunoo                           font-smoothing-adjuster
+font-bungee                                      font-inconsolata-for-powerline-bold              font-noto-sans-hatran                            font-smythe
+font-bungee-hairline                             font-inconsolata-g                               font-noto-sans-hebrew                            font-sniglet
+font-bungee-inline                               font-inconsolata-g-for-powerline                 font-noto-sans-imperial-aramaic                  font-snippet
+font-bungee-outline                              font-inconsolata-go-nerd-font                    font-noto-sans-indic-siyaq-numbers               font-snowburst-one
+font-bungee-shade                                font-inconsolata-lgc                             font-noto-sans-inscriptional-pahlavi             font-sofadi-one
+font-butcherman                                  font-inconsolata-lgc-nerd-font                   font-noto-sans-inscriptional-parthian            font-sofia
+font-butcherman-caps                             font-inconsolata-nerd-font                       font-noto-sans-javanese                          font-sofia-sans
+font-butterfly-kids                              font-inder                                       font-noto-sans-kaithi                            font-solway
+font-cabin                                       font-indie-flower                                font-noto-sans-kannada                           font-sometype-mono
+font-cabin-condensed                             font-infini                                      font-noto-sans-kannada-ui                        font-song-myung
+font-cabin-sketch                                font-inika                                       font-noto-sans-kayah-li                          font-sonsie-one
+font-cabin-vf-beta                               font-inknut-antiqua                              font-noto-sans-kharoshthi                        font-sora
+font-caesar-dressing                             font-input                                       font-noto-sans-khmer                             font-sorts-mill-goudy
+font-cagliostro                                  font-inria                                       font-noto-sans-khmer-ui                          font-souliyo
+font-cairo                                       font-inria-sans                                  font-noto-sans-khojki                            font-source-code-pro
+font-caladea                                     font-inria-serif                                 font-noto-sans-khudawadi                         font-source-code-pro-for-powerline
+font-calistoga                                   font-inter                                       font-noto-sans-lao                               font-source-sans-pro
+font-calligraffitti                              font-iosevka                                     font-noto-sans-lao-ui                            font-source-serif-pro
+font-cambay                                      font-iosevka-aile                                font-noto-sans-lepcha                            font-space-grotesk
+font-cambo                                       font-iosevka-curly                               font-noto-sans-limbu                             font-space-mono
+font-camingocode                                 font-iosevka-curly-slab                          font-noto-sans-linear-a                          font-space-mono-nerd-font
+font-candal                                      font-iosevka-etoile                              font-noto-sans-linear-b                          font-spartan
+font-cantarell                                   font-iosevka-nerd-font                           font-noto-sans-lisu                              font-special-elite
+font-cantata-one                                 font-iosevka-slab                                font-noto-sans-lycian                            font-spectral
+font-cantora-one                                 font-iosevka-ss01                                font-noto-sans-lydian                            font-spectral-sc
+font-capriola                                    font-iosevka-ss02                                font-noto-sans-mahajani                          font-spicy-rice
+font-cardo                                       font-iosevka-ss03                                font-noto-sans-malayalam                         font-spinnaker
+font-carme                                       font-iosevka-ss04                                font-noto-sans-malayalam-ui                      font-spirax
+font-carrois-gothic                              font-iosevka-ss05                                font-noto-sans-mandaic                           font-spleen
+font-carrois-gothic-sc                           font-iosevka-ss06                                font-noto-sans-manichaean                        font-squada-one
+font-carter-one                                  font-iosevka-ss07                                font-noto-sans-marchen                           font-sree-krushnadevaraya
+font-cascadia-code                               font-iosevka-ss08                                font-noto-sans-masaram-gondi                     font-sriracha
+font-cascadia-code-pl                            font-iosevka-ss09                                font-noto-sans-math                              font-srisakdi
+font-cascadia-mono                               font-iosevka-ss10                                font-noto-sans-mayan-numerals                    font-staatliches
+font-cascadia-mono-pl                            font-iosevka-ss11                                font-noto-sans-medefaidrin                       font-stalemate
+font-caskaydia-cove-nerd-font                    font-iosevka-ss12                                font-noto-sans-meeteimayek                       font-stalin-one
+font-castoro                                     font-iosevka-ss13                                font-noto-sans-mende-kikakui                     font-stalinist-one
+font-catamaran                                   font-iosevka-ss14                                font-noto-sans-meroitic                          font-stardos-stencil
+font-caudex                                      font-iosevka-ss15                                font-noto-sans-miao                              font-stick
+font-caveat                                      font-iosevka-ss16                                font-noto-sans-modi                              font-stick-no-bills
+font-caveat-brush                                font-iosevka-ss17                                font-noto-sans-mongolian                         font-stint-ultra-condensed
+font-cedarville-cursive                          font-iosevka-ss18                                font-noto-sans-mono                              font-stint-ultra-expanded
+font-ceviche-one                                 font-ipaexfont                                   font-noto-sans-mro                               font-stix
+font-chakra-petch                                font-ipafont                                     font-noto-sans-multani                           font-stix-two-math
+font-changa                                      font-ipamjmincho                                 font-noto-sans-myanmar                           font-stix-two-text
+font-changa-one                                  font-iranian-sans                                font-noto-sans-myanmar-ui                        font-stoke
+font-chango                                      font-iranian-serif                               font-noto-sans-n-ko                              font-strait
+font-chapbook                                    font-irish-grover                                font-noto-sans-nabataean                         font-strong
+font-charis-sil                                  font-istok-web                                   font-noto-sans-new-tai-lue                       font-style-script
+font-charm                                       font-italiana                                    font-noto-sans-newa                              font-stylish
+font-charmonman                                  font-italianno                                   font-noto-sans-nushu                             font-sudo
+font-charter                                     font-itim                                        font-noto-sans-ogham                             font-sue-ellen-francisco
+font-chathura                                    font-jaapokki                                    font-noto-sans-ol-chiki                          font-suez-one
+font-chau-philomene-one                          font-jacques-francois                            font-noto-sans-old-hungarian                     font-sulphur-point
+font-chela-one                                   font-jacques-francois-shadow                     font-noto-sans-old-italic                        font-sumana
+font-chelsea-market                              font-jaldi                                       font-noto-sans-old-north-arabian                 font-sunflower
+font-chenla                                      font-jeju-gothic                                 font-noto-sans-old-permic                        font-sunshiney
+font-cherry-bomb                                 font-jeju-hallasan                               font-noto-sans-old-persian                       font-supermercado-one
+font-cherry-bomb-one                             font-jeju-myeongjo                               font-noto-sans-old-sogdian                       font-sura
+font-cherry-cream-soda                           font-jetbrains-mono                              font-noto-sans-old-south-arabian                 font-suranna
+font-cherry-swash                                font-jetbrains-mono-nerd-font                    font-noto-sans-old-turkic                        font-suravaram
+font-chewy                                       font-jf-open-huninn                              font-noto-sans-oriya                             font-suwannaphum
+font-chicle                                      font-jim-nightshade                              font-noto-sans-oriya-ui                          font-swanky-and-moo-moo
+font-chilanka                                    font-jockey-one                                  font-noto-sans-osage                             font-syncopate
+font-chivo                                       font-jolly-lodger                                font-noto-sans-osmanya                           font-syne
+font-chokokutai                                  font-jomhuria                                    font-noto-sans-pahawh-hmong                      font-syne-mono
+font-chomsky                                     font-jomolhari                                   font-noto-sans-palmyrene                         font-syne-tactile
+font-chonburi                                    font-joscelyn                                    font-noto-sans-pau-cin-hau                       font-tajawal
+font-church-slavonic                             font-josefin-sans                                font-noto-sans-phags-pa                          font-takaoex
+font-cica                                        font-josefin-sans-std-light                      font-noto-sans-phoenician                        font-tangerine
+font-cinzel                                      font-josefin-slab                                font-noto-sans-psalter-pahlavi                   font-taprom
+font-cinzel-decorative                           font-jost                                        font-noto-sans-rejang                            font-tauri
+font-clear-sans                                  font-joti-one                                    font-noto-sans-runic                             font-taviraj
+font-clicker-script                              font-jsmath-cmbx10                               font-noto-sans-samaritan                         font-teko
+font-cochineal                                   font-jsmath-cmex10                               font-noto-sans-saurashtra                        font-telex
+font-coda                                        font-jsmath-cmmi10                               font-noto-sans-sharada                           font-tenali-ramakrishna
+font-coda-caption                                font-jsmath-cmr10                                font-noto-sans-shavian                           font-tengwar-formal-csur
+font-code-new-roman-nerd-font                    font-jsmath-cmsy10                               font-noto-sans-siddham                           font-tengwar-telcontar
+font-code2002                                    font-jsmath-cmti10                               font-noto-sans-sinhala                           font-tenor-sans
+font-codystar                                    font-jua                                         font-noto-sans-sinhala-ui                        font-terminess-ttf-nerd-font
+font-coelacanth                                  font-judson                                      font-noto-sans-sogdian                           font-terminus
+font-coiny                                       font-julee                                       font-noto-sans-sora-sompeng                      font-tex-gyre-adventor
+font-combo                                       font-juliamono                                   font-noto-sans-soyombo                           font-tex-gyre-bonum
+font-comfortaa                                   font-julius-sans-one                             font-noto-sans-sundanese                         font-tex-gyre-bonum-math
+font-comic-mono                                  font-junction                                    font-noto-sans-syloti-nagri                      font-tex-gyre-chorus
+font-comic-neue                                  font-junge                                       font-noto-sans-symbols                           font-tex-gyre-cursor
+font-comic-sans-ms                               font-junicode                                    font-noto-sans-symbols-2                         font-tex-gyre-heros
+font-coming-soon                                 font-jura                                        font-noto-sans-syriac                            font-tex-gyre-pagella
+font-commissioner                                font-just-another-hand                           font-noto-sans-syriac-eastern                    font-tex-gyre-pagella-math
+font-computer-modern                             font-just-me-again-down-here                     font-noto-sans-syriac-estrangela                 font-tex-gyre-schola
+font-conakry                                     font-k2d                                         font-noto-sans-syriac-western                    font-tex-gyre-schola-math
+font-concert-one                                 font-kadwa                                       font-noto-sans-tagalog                           font-tex-gyre-termes
+font-condiment                                   font-kaiso                                       font-noto-sans-tagbanwa                          font-tex-gyre-termes-math
+font-consolas-for-powerline                      font-kalam                                       font-noto-sans-tai-le                            font-text-me-one
+font-constructium                                font-kameron                                     font-noto-sans-tai-tham                          font-texturina
+font-content                                     font-kanit                                       font-noto-sans-tai-viet                          font-thabit
+font-contrail-one                                font-kanjistrokeorders                           font-noto-sans-takri                             font-tharlon
+font-convergence                                 font-kantumruy                                   font-noto-sans-tamil                             font-thasadith
+font-cookie                                      font-kapakana                                    font-noto-sans-tamil-supplement                  font-the-girl-next-door
+font-cooper-hewitt                               font-karantina                                   font-noto-sans-tamil-ui                          font-tienne
+font-copse                                       font-karla                                       font-noto-sans-telugu                            font-tillana
+font-corben                                      font-karla-tamil-inclined                        font-noto-sans-telugu-ui                         font-times-new-roman
+font-cormorant                                   font-karla-tamil-upright                         font-noto-sans-thaana                            font-times-newer-roman
+font-cormorant-garamond                          font-karma                                       font-noto-sans-thai                              font-timmana
+font-cormorant-infant                            font-katibeh                                     font-noto-sans-thai-looped                       font-tinos
+font-cormorant-sc                                font-kaushan-script                              font-noto-sans-thai-ui                           font-tinos-nerd-font
+font-cormorant-unicase                           font-kavivanar                                   font-noto-sans-tibetan                           font-titan-one
+font-cormorant-upright                           font-kavoon                                      font-noto-sans-tifinagh                          font-titillium
+font-courgette                                   font-kawkab-mono                                 font-noto-sans-tirhuta                           font-titillium-web
+font-courier-new                                 font-kdam-thmor                                  font-noto-sans-ugaritic                          font-togalite
+font-courier-prime                               font-keania-one                                  font-noto-sans-vai                               font-tomorrow
+font-courier-prime-code                          font-kelly-slab                                  font-noto-sans-wancho                            font-tourney
+font-courier-prime-medium-and-semi-bold          font-kenia                                       font-noto-sans-warang-citi                       font-trade-winds
+font-courier-prime-sans                          font-khand                                       font-noto-sans-yi                                font-train-one
+font-cousine                                     font-khmer                                       font-noto-sans-zanabazar-square                  font-trebuchet-ms
+font-cousine-nerd-font                           font-khula                                       font-noto-serif                                  font-trirong
+font-coustard                                    font-khyay                                       font-noto-serif-ahom                             font-trispace
+font-covered-by-your-grace                       font-kimberella                                  font-noto-serif-armenian                         font-trocchi
+font-cozette                                     font-kirang-haerang                              font-noto-serif-balinese                         font-trochut
+font-crafty-girls                                font-kite-one                                    font-noto-serif-bengali                          font-truculenta
+font-creepster                                   font-kiwi-maru                                   font-noto-serif-cjk                              font-trykker
+font-creepster-caps                              font-klee-one                                    font-noto-serif-cjk-jp                           font-tsukimi-rounded
+font-crete-round                                 font-knewave                                     font-noto-serif-cjk-kr                           font-tt2020
+font-crimson-pro                                 font-ko-pub-batang                               font-noto-serif-cjk-sc                           font-tuffy
+font-crimson-text                                font-kodchasan                                   font-noto-serif-cjk-tc                           font-tulpen-one
+font-croissant-one                               font-koho                                        font-noto-serif-devanagari                       font-turret-road
+font-crushed                                     font-kokoro                                      font-noto-serif-display                          font-twitter-color-emoji
+font-cuprum                                      font-kotta-one                                   font-noto-serif-dogra                            font-typographer-woodcut-initials-one
+font-cute-font                                   font-koulen                                      font-noto-serif-ethiopic                         font-ubuntu
+font-cutive                                      font-kranky                                      font-noto-serif-georgian                         font-ubuntu-condensed
+font-cutive-mono                                 font-kreon                                       font-noto-serif-grantha                          font-ubuntu-mono
+font-d2coding                                    font-kristi                                      font-noto-serif-gujarati                         font-ubuntu-mono-derivative-powerline
+font-daddy-time-mono-nerd-font                   font-krona-one                                   font-noto-serif-gurmukhi                         font-ubuntu-mono-nerd-font
+font-damion                                      font-krub                                        font-noto-serif-hebrew                           font-ubuntu-nerd-font
+font-dancing-script                              font-kufam                                       font-noto-serif-kannada                          font-uchen
+font-dangrek                                     font-kulim-park                                  font-noto-serif-khmer                            font-ultra
+font-darker-grotesque                            font-kumar-one                                   font-noto-serif-lao                              font-uncial-antiqua
+font-daruma-drop-one                             font-kumbh-sans                                  font-noto-serif-malayalam                        font-underdog
+font-dashicons                                   font-kurale                                      font-noto-serif-myanmar                          font-unica-one
+font-david-clm                                   font-la-belle-aurore                             font-noto-serif-nyiakeng-puachue-hmong           font-unifrakturcook
+font-dawning-of-a-new-day                        font-lacquer                                     font-noto-serif-sinhala                          font-unifrakturmaguntia
+font-days-one                                    font-laila                                       font-noto-serif-tamil                            font-unkempt
+font-decovar-alpha                               font-lakki-reddy                                 font-noto-serif-tangut                           font-unlock
+font-dejavu                                      font-lalezar                                     font-noto-serif-telugu                           font-unna
+font-dejavu-sans-mono-for-powerline              font-lancelot                                    font-noto-serif-thai                             font-urbanist
+font-dejavu-sans-mono-nerd-font                  font-langar                                      font-noto-serif-tibetan                          font-urw-base35
+font-dekko                                       font-langdon                                     font-noto-serif-yezidi                           font-vampiro-one
+font-dela-gothic-one                             font-lao-muang-don                               font-noto-traditional-nushu                      font-varela
+font-delius                                      font-lao-muang-khong                             font-nova-cut                                    font-varela-round
+font-delius-swash-caps                           font-lao-sans-pro                                font-nova-flat                                   font-varta
+font-delius-unicase                              font-last-resort                                 font-nova-mono                                   font-vast-shadow
+font-della-respira                               font-last-resort-high-efficiency                 font-nova-oval                                   font-verdana
+font-denk-one                                    font-lateef                                      font-nova-round                                  font-vesper-libre
+font-devicons                                    font-latin-modern                                font-nova-script                                 font-viaoda-libre
+font-devonshire                                  font-latin-modern-math                           font-nova-slim                                   font-vibes
+font-dhurjati                                    font-lato                                        font-nova-square                                 font-vibur
+font-dhyana                                      font-league-gothic                               font-ntr                                         font-victor-mono
+font-didact-gothic                               font-league-mono                                 font-numans                                      font-victor-mono-nerd-font
+font-digital-numbers                             font-league-script                               font-nunito                                      font-vidaloka
+font-digohweli-old-do                            font-league-spartan                              font-nunito-sans                                 font-viga
+font-diplomata                                   font-leckerli-one                                font-ocr                                         font-voces
+font-diplomata-sc                                font-ledger                                      font-odibee-sans                                 font-volkhov
+font-dm-mono                                     font-lekton                                      font-odor-mean-chey                              font-vollkorn
+font-dm-sans                                     font-lekton-nerd-font                            font-office-code-pro                             font-vollkorn-sc
+font-dm-serif-display                            font-lemon                                       font-offside                                     font-voltaire
+font-dm-serif-text                               font-lemonada                                    font-ofl-sorts-mill-goudy-tt                     font-vt323
+font-do-hyeon                                    font-lemonada-vf-beta                            font-oi                                          font-waiting-for-the-sunrise
+font-dokdo                                       font-lexend                                      font-old-standard-tt                             font-wallpoet
+font-domine                                      font-lexend-deca                                 font-oldenburg                                   font-walter-turncoat
+font-donegal-one                                 font-lexend-exa                                  font-oleo-script                                 font-waptia
+font-dongle                                      font-lexend-giga                                 font-oleo-script-swash-caps                      font-warnes
+font-doppio-one                                  font-lexend-mega                                 font-open-dyslexic                               font-wellfleet
+font-dorsa                                       font-lexend-peta                                 font-open-dyslexic-nerd-font                     font-wendy-one
+font-dosis                                       font-lexend-tera                                 font-open-iconic                                 font-windsong
+font-dotgothic16                                 font-lexend-zetta                                font-open-sans                                   font-wire-one
+font-doulos-sil                                  font-liberation                                  font-open-sans-condensed                         font-work-sans
+font-dr-sugiyama                                 font-liberation-mono-for-powerline               font-open-sans-hebrew                            font-xanh-mono
+font-droid-sans-mono-for-powerline               font-liberation-nerd-font                        font-open-sans-hebrew-condensed                  font-xits
+font-droid-sans-mono-nerd-font                   font-libertinus                                  font-oppo-sans                                   font-xkcd
+font-duru-sans                                   font-libre-barcode-128 ✔                         font-optician-sans                               font-xkcd-script
+font-dynalight                                   font-libre-barcode-128-text ✔                    font-oranienbaum                                 font-yaldevi
+font-eagle-lake                                  font-libre-barcode-39                            font-orbitron                                    font-yaldevi-colombo
+font-east-sea-dokdo                              font-libre-barcode-39-extended                   font-oregano                                     font-yanone-kaffeesatz
+font-eater                                       font-libre-barcode-39-extended-text              font-orelega-one                                 font-yantramanav
+font-eater-caps                                  font-libre-barcode-39-text                       font-orienta                                     font-yatra-one
+font-eb-garamond                                 font-libre-barcode-ean13-text                    font-original-surfer                             font-yellowtail
+font-economica                                   font-libre-baskerville                           font-ostrich-sans                                font-yeon-sung
+font-eczar                                       font-libre-caslon-display                        font-oswald                                      font-yeseva-one
+font-edlo                                        font-libre-caslon-text                           font-otomanopee-one                              font-yesteryear
+font-ek-mukta                                    font-libre-franklin                              font-over-the-rainbow                            font-yinmar
+font-el-messiri                                  font-life-savers                                 font-overlock                                    font-yomogi
+font-electrolize                                 font-ligature-symbols                            font-overlock-sc                                 font-yrsa
+font-elsie                                       font-lilex                                       font-overpass                                    font-ysabeau
+font-elsie-swash-caps                            font-lilita-one                                  font-overpass-mono                               font-yusei-magic
+font-elstobd                                     font-lily-script-one                             font-overpass-nerd-font                          font-zcool-kuaile
+font-emblema-one                                 font-limelight                                   font-ovo                                         font-zcool-qingke-huangyou
+font-emilys-candy                                font-linden-hill                                 font-oxanium                                     font-zcool-xiaowei
+font-encode-sans                                 font-linux-biolinum                              font-oxygen                                      font-zen-dots
+font-encode-sans-condensed                       font-linux-libertine                             font-oxygen-mono                                 font-zen-loop
+font-encode-sans-expanded                        font-literata                                    font-pacifico                                    font-zen-tokyo-zoo
+font-encode-sans-sc                              font-liu-jian-mao-cao                            font-padauk                                      font-zeyada
+font-encode-sans-semi-condensed                  font-livvic                                      font-palanquin                                   font-zhi-mang-xing
+font-encode-sans-semi-expanded                   font-lobster                                     font-palanquin-dark                              font-zilla-slab
+font-engagement                                  font-lobster-two                                 font-palette-mosaic                              font-zilla-slab-highlight
+font-englebert                                   font-lohit                                       font-pangolin                                    fontbase
+font-enriqueta                                   font-lohit-bengali                               font-paprika                                     fontexplorer-x-pro
+font-envy-code-r                                 font-lohit-tamil                                 font-parisienne                                  fontforge
+font-epilogue                                    font-londrina-outline                            font-passero-one                                 fontgoggles
+font-erica-one                                   font-londrina-shadow                             font-passion-one                                 fontlab
+font-escumasia                                   font-londrina-sketch                             font-pathway-gothic-one                          fontplop
+font-esteban                                     font-londrina-solid                              font-patrick-hand                                fontstand
+font-et-book                                     font-long-cang                                   font-patrick-hand-sc                             rightfont
+font-euphoria-script                             font-lora                                        font-pattaya                                     robofont
+font-everson-mono                                font-love-ya-like-a-sister                       font-patua-one                                   skyfonts
+font-ewert                                       font-loved-by-the-king                           font-pavanam
+font-exo                                         font-lovers-quarrel                              font-paytone-one
+maxime@mac MacOS % 
+  [Restored 5 Oct 2021 at 04:12:58]
+Last login: Mon Oct  4 21:12:43 on ttys002
+Restored session: Tue Oct  5 03:56:55 CEST 2021
+maxime@mac MacOS % brew shellenv
+maxime@mac MacOS % echo 'eval "$(/opt/homebrew/bin/)"' >> /Users/maxime/.zprofile
+maxime@mac MacOS % echo 'eval "$(/opt/homebrew/bin/)"'                           
+eval "$(/opt/homebrew/bin/)"
+maxime@mac MacOS % 
