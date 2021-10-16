@@ -10,5 +10,9 @@ xcode-select --install
 echo 'eval "$(/opt/homebrew/bin/brew shellenv)"' >> /Users/maxime/.zprofile
 eval "$(/opt/homebrew/bin/brew shellenv)"
 
-# Tap bundle and install packages (mas packages not working atm, good old copy/paste /Applications)
+# Meh
+brew update
+brew upgrade
+
+# Tap, Tap, Tap dis bundle and install packages (mas packages not working atm, good old copy/paste /Applications)
 brew bundle
