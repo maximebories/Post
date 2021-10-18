@@ -16,3 +16,7 @@ brew upgrade
 
 # Tap, Tap, Tap dis bundle and install packages (mas packages not working atm, good old copy/paste /Applications)
 brew bundle
+
+# Automated install of adguard-home (Will be running somewhere else soon)
+
+curl -s -S -L https://raw.githubusercontent.com/AdguardTeam/AdGuardHome/master/scripts/install.sh | sh -s -- -v
