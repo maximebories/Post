@@ -1,0 +1,148 @@
+#!/usr/bin/env bash
+
+defaults write com.apple.itunescloud "ICDefaultsCachedSubscriptionStatus" '
+<dict>
+	<key>lastKnownActiveDSID</key>
+	<integer>166608742</integer>
+	<key>lastKnownOSVersion</key>
+	<string>21A5534d</string>
+	<key>responses</key>
+	<dict>
+		<key>{"phoneNumber":"","dsid":"0","storefrontID":"143442"}</key>
+		<dict>
+			<key>status</key>
+			<dict>
+				<key>_ICMusicSubscriptionStatusAdditionalProperties</key>
+				<dict>
+					<key>carrierBundlingStatusType</key>
+					<integer>0</integer>
+				</dict>
+				<key>acceptSilentAuth</key>
+				<true/>
+				<key>account</key>
+				<dict/>
+				<key>family</key>
+				<dict/>
+				<key>match</key>
+				<dict>
+					<key>status</key>
+					<string>Disabled</string>
+				</dict>
+				<key>music</key>
+				<dict>
+					<key>eligibleOffer</key>
+					<string>INTRO</string>
+					<key>eligibleOffers</key>
+					<array>
+						<string>INTRO</string>
+					</array>
+					<key>isFamilySubscription</key>
+					<false/>
+					<key>isNotEligibleForFreeTrial</key>
+					<false/>
+					<key>previousOffer</key>
+					<string>Individual</string>
+					<key>status</key>
+					<string>Disabled</string>
+				</dict>
+				<key>status</key>
+				<integer>0</integer>
+				<key>terms</key>
+				<array/>
+			</dict>
+			<key>valid</key>
+			<integer>0</integer>
+		</dict>
+		<key>{"phoneNumber":"","dsid":"166608742","storefrontID":"143442"}</key>
+		<dict>
+			<key>status</key>
+			<dict>
+				<key>_ICMusicSubscriptionStatusAdditionalProperties</key>
+				<dict>
+					<key>carrierBundlingStatusType</key>
+					<integer>0</integer>
+				</dict>
+				<key>acceptSilentAuth</key>
+				<true/>
+				<key>account</key>
+				<dict>
+					<key>isMinor</key>
+					<false/>
+					<key>suspectUnderage</key>
+					<false/>
+				</dict>
+				<key>family</key>
+				<dict>
+					<key>hasFamily</key>
+					<true/>
+					<key>hasFamilyGreaterThanOneMember</key>
+					<false/>
+					<key>isHoH</key>
+					<true/>
+				</dict>
+				<key>match</key>
+				<dict>
+					<key>status</key>
+					<string>Disabled</string>
+				</dict>
+				<key>music</key>
+				<dict>
+					<key>expirationDate</key>
+					<string>1633479251000</string>
+					<key>hasOfflineSlots</key>
+					<true/>
+					<key>isAdmin</key>
+					<false/>
+					<key>isAutoRenewEnabled</key>
+					<true/>
+					<key>isFamilySubscription</key>
+					<false/>
+					<key>isInFreeTrial</key>
+					<false/>
+					<key>isNotEligibleForFreeTrial</key>
+					<true/>
+					<key>isPurchaser</key>
+					<true/>
+					<key>reason</key>
+					<string>Individual</string>
+					<key>status</key>
+					<string>Enabled</string>
+				</dict>
+				<key>status</key>
+				<integer>0</integer>
+				<key>terms</key>
+				<array>
+					<dict>
+						<key>agreedToTerms</key>
+						<integer>32</integer>
+						<key>latestTerms</key>
+						<integer>29</integer>
+						<key>source</key>
+						<string>account</string>
+						<key>type</key>
+						<string>Store</string>
+					</dict>
+				</array>
+			</dict>
+			<key>valid</key>
+			<integer>1</integer>
+		</dict>
+	</dict>
+</dict>
+'
+defaults write com.apple.itunescloud "ICDefaultsKeyLastActiveAccountDSID" -integer 166608742
+defaults write com.apple.itunescloud "ICDefaultsKeyLastCookieHeadersForRevokingMusicUserTokens" '
+<dict>
+	<key>Cookie</key>
+	<string>X-Dsid=166608742; amia-166608742=LlZLe4CSoGwf6zcpcxpGTIoFpg501lwii140Rv1bKDo0WB94/UdtNJr1sL6Ol62E9iPPXUrepNpcjTS1t1I4nQ==; xp_ab=1#Jv0scgz+-2+ygXxUTb00#Zh4zkDd+-2+Utk2R3g0#WqjkRLH+-2+4l_6Hwd02#isj11bm+-2+17Eg4xa0; wosid-lite=uJyfWWyYJYY5oN1XLmz97g; countryVerified=1; mz_at_mau-166608742=AwIAAAEBAAH70AAAAABhWVpTcB4c4FAEutbc0ZXPIfJMvkC+EPk=; pldfltcid=5019e97c71b447ed8b4eaf62693234c4014; mz_at_ssl-166608742=AwUAAAEBAAH70AAAAABhWWrSxnl5dUDDxlFkBzAI3iM6ga3kYqw=; fspc=AAAAAAAAAAFulbamGbTTEet0rCcVhLvjT0NSHH2B9Iw3H4V8cGhf3Lyx7HF/aHqgwp99hxE/0Ub8+6NfN+k6FcSDp+8IrLPz34D7UcVGrYc5aJpmY5O9AA==; xp_ci=3z36YI8hzGeDz5GvzBTQz15jGhInb7; TrPod=8; mt-asn-166608742=5; mz_mt0-166608742=Amr1NrTP0EQr5MqEm4+V/Fv5lsvbEj2tW36/aShggme94s5RisqL3CnEqmYaoxeP8oOj49HbwuUINH4Kmt2G2XDZxY9UM+m1ioXghyrbNmUKj0wkEABJhtYd3LMiIRKUO0+VHlqgGe6NH+Qr7IYLhbllRHpze/1ZcspsCWKNu/A3DwD+5k7k1qfCilxgu1FJc8eDmJg=; mz_at0-166608742=AwQAAAEBAAH70AAAAABhWWrS2Dgxy5nRQ5yTQjUzQ8eVzbSk4H4=; fsnw=AAAAAAAAAAEdastPn7WZVOcB2YwCJt2uhrlZCJgc4dFHUr0bYl+ifAnwORroXHKb3SLOP4ufmm+fEZ8oVjmSYLPLMGSjF95kHpvPtPUhgQbxod9cU9/mEw==; vrep=COb-uE8SBAgKEAASBAgIEAASBAgREAASBAgFEAASBAgNEAASBAgGEAASBAgHEAASBAgSEAASBAgMEAASBAgOEAASBAgQEAASBAgBEAASBAgPEAASBAgEEAASBAgDEAASBAgJEAASBAgCEAASBAgLEAA; fsas=AAAAAAAAAAGAdvUr6H04ox6GQiZmYgleRLQBxZntVznjMMBJaWwAHjXTOPuwDSh7ZNOlkzkBkg7RCqJSr9TXgO6nfwVBOF6MeDa/tBKxAxmjCWsdlnKd8g==; mzf_in=143196; hsaccnt=1; radioUserToken=b5304554-6c6b-45cd-95d4-551a0e52a31e; amp=Ra820dnMLZrztHNQlhX1R3e3Waa/FC+ndAQ6gMajTYf7UwJfGyAT3Ahc/HeM9/b9ooa4iRCwZjZ6kRJDBlozmyYM5vpFRZH8VkfEgaF5zyYEdW56uCymZBL0CSldJJOpFJfFWg+yPaXMq+kURYTiMFZZY6dnrfNn/52ZlvGEOIo=; xp_abc=17Eg4xa0#4l_6Hwd02; mt-tkn-166608742=AoXcGL6Ijko5CuIfD/031WnwrGz5avz4KIRPoXMJLeXkRuHOUmWzG0GLpB1TvyJnz/UDUNaM0wCklF+dqmq7ILhqm4HHgGoRT/WOFAgR86/v8kTH6SyQdIpEzkv/ZtF+J6ZC23ygEn31T858LYqpOL6glYs0+ZpkIplVtChIrUedr6dugypwV+a3T9k0qTD/H2Q9xV8=; itspod=14</string>
+</dict>
+'
+defaults write com.apple.itunescloud "ICDefaultsKeyLastKnownSubscriptionStatusBaseCacheKey" '
+<dict>
+	<key>phoneNumber</key>
+	<string></string>
+	<key>storefrontID</key>
+	<string>143442</string>
+</dict>
+'
+defaults write com.apple.itunescloud "ICDefaultsKeyMediaLibraryAccessApplicationIdentifiersWithTCCAcceptanceDates" '<dict/>'

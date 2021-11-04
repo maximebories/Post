@@ -1,0 +1,15 @@
+#!/usr/bin/env bash
+
+defaults write com.apple.Safari.SandboxBroker "DidMigrateDownloadFolderToSandbox" -boolean true
+defaults write com.apple.Safari.SandboxBroker "DidMigrateResourcesToSandbox" -boolean true
+defaults write com.apple.Safari.SandboxBroker "Homepage" '
+<data>
+YnBsaXN0MDDUAQIDBAUGBwpYJHZlcnNpb25ZJGFyY2hpdmVyVCR0b3BYJG9iamVjdHMS
+AAGGoF8QD05TS2V5ZWRBcmNoaXZlctEICVRyb290gAGkCwwTFFUkbnVsbNMNDg8QERJX
+TlMuYmFzZVYkY2xhc3NbTlMucmVsYXRpdmWAAIADgAJfECJodHRwOi8vd3d3LmFwcGxl
+LmNvbS91ay9zdGFydHBhZ2Uv0hUWFxhaJGNsYXNzbmFtZVgkY2xhc3Nlc1VOU1VSTKIX
+GVhOU09iamVjdAgRGiQpMjdJTFFTWF5lbXSAgoSGq7C7xMrNAAAAAAAAAQEAAAAAAAAA
+GgAAAAAAAAAAAAAAAAAAANY=
+</data>
+'
+defaults write com.apple.Safari.SandboxBroker "ShowDevelopMenu" -boolean false

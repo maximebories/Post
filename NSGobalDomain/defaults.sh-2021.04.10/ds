@@ -1,0 +1,288 @@
+#!/usr/bin/env bash
+#
+# defaults.sh (ds)
+# version 2021.04.10
+#
+# AGPLv3 License
+# Created by github.com/aerobounce on 2019/2/1.
+# Copyright © 2019-present aerobounce. All rights reserved.
+#
+set -Cu
+
+# Parser
+# $1: Domain name
+# $2: -currentHost (Must be either '-currentHost' without quotes or empty.)
+parse() {
+    # Defaults Key and Value.
+    local KEY=""
+    local VALUE=""
+    local SKIP=0
+
+    next() {
+        KEY=""
+        VALUE=""
+    }
+
+    # Begin writing script.
+    # Declare shebang.
+    printf '#!/usr/bin/env bash\n\n'
+
+    # Parse Raw XML line by line.
+    # shellcheck disable=SC2086
+    defaults ${2:-} export "$1" - | while IFS= read -r; do
+
+        # Store Value Type
+        local VALUE_TYPE="${REPLY#*</}"
+        VALUE_TYPE="${VALUE_TYPE%>}"
+
+        case "$REPLY" in
+            $'\t'"<key>"*)
+                # Reset SKIP flag
+                SKIP=0
+
+                # Extract KEY
+                KEY="${REPLY#$'\t'<key>}"
+                KEY="${KEY%</key>}"
+                local RAW_KEY="$KEY"
+                KEY=\""${RAW_KEY}"\"
+
+                # Regex pattern matching
+                if [[ -n $REGEXP ]]; then
+                    if perl -ne 'exit 1 if /'"$REGEXP"'/' <<< "$RAW_KEY"; then
+                        # Skip this key
+                        SKIP=1
+                    fi
+                fi
+
+                ;;
+
+            $'\t'"<string>"* | $'\t'"<date>"*)
+                # Extract Value (String or Date)
+                VALUE="${REPLY/$'\t'<$VALUE_TYPE>/}"
+                VALUE="-$VALUE_TYPE '${VALUE/<\/$VALUE_TYPE>/}'"
+                ;;
+
+            $'\t'"<integer>"*)
+                # Extract Value (Integer)
+                VALUE="${REPLY/$'\t'<$VALUE_TYPE>/}"
+                VALUE="-$VALUE_TYPE ${VALUE/<\/$VALUE_TYPE>/}"
+                ;;
+
+            $'\t'"<real>"*)
+                # Extract Value (Float)
+                VALUE="${REPLY/$'\t'<$VALUE_TYPE>/}"
+                VALUE="-float ${VALUE/<\/$VALUE_TYPE>/}"
+                ;;
+
+            $'\t'"<true/>" | $'\t'"<false/>")
+                # Extract Value (Boolean)
+                VALUE="${REPLY/$'\t'</}"
+                VALUE="-boolean ${VALUE/\/>/}"
+                ;;
+
+            $'\t'"<dict/>" | $'\t'"<array/>")
+                # Extract Value (Empty Array or Dict)
+                VALUE="'${REPLY#$'\t'}'"
+                ;;
+
+            $'\t'"<data>" | $'\t'"<array>" | $'\t'"<dict>")
+                # Data, Array or Dict - Phase 1: Tag Begins
+
+                [[ $SKIP == 1 ]] && next && continue # Skip
+
+                if [[ -n ${2:-} ]]; then
+                    echo "defaults ${2:-} write $1 $KEY '"$'\n'"${REPLY#$'\t'}"
+                else
+                    echo "defaults write $1 $KEY '"$'\n'"${REPLY#$'\t'}"
+                fi
+
+                next # Reset KEY and VALUE
+                continue
+                ;;
+
+            $'\t'"</data>" | $'\t'"</array>" | $'\t'"</dict>")
+                # Data, Array or Dict - Phase 3: Tag Ends
+
+                [[ $SKIP == 1 ]] && next && continue # Skip
+
+                echo "${REPLY#$'\t'}"$'\n'\'
+
+                next # Reset KEY and VALUE
+                continue
+                ;;
+
+            *)
+                # Data, Array or Dict - Phase 2: Extract Raw XML
+
+                [[ $SKIP == 1 ]] && next && continue # Skip
+
+                # Skip XML Declaration, Plist info and Root Tags
+                local DOCTYPE='<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" '
+                DOCTYPE+='"http://www.apple.com/DTDs/PropertyList-1.0.dtd">'
+                [[ $REPLY == '<?xml version="1.0" encoding="UTF-8"?>' ]] && continue
+                [[ $REPLY == "$DOCTYPE" ]] && continue
+                [[ $REPLY == '<plist version="1.0">' ]] && continue
+                [[ $REPLY == "<dict>" ]] && continue
+                [[ $REPLY == "</dict>" ]] && continue
+                [[ $REPLY == "</plist>" ]] && continue
+
+                # Empty case.
+                [[ $REPLY == "<dict/>" ]] && echo "# Empty plist." && continue
+
+                REPLY=${REPLY#$'\t'}
+                REPLY=${REPLY//\'/\'\"\'\"\'} # Escape single quote
+                echo "$REPLY"
+                ;;
+
+        esac
+
+        # If KEY and VALUE are ready, echo result
+        [[ -n $KEY && -n $VALUE ]] || continue
+        [[ $SKIP == 1 ]] && next && continue # Skip
+
+        if [[ -n ${2:-} ]]; then
+            echo "defaults ${2:-} write $1 $KEY $VALUE"
+        else
+            echo "defaults write $1 $KEY $VALUE"
+        fi
+
+        next # Reset KEY and VALUE
+    done
+}
+
+# Parse all the domains and save as script files.
+# This process will be done concurrently.
+save() {
+    (
+        local IFS=', '
+        local DOMAIN
+        local SAVE_DIR
+
+        SAVE_DIR="$HOME/Desktop/ds $(date "+%Y.%m.%d %H.%M.%S")"
+        [[ ! -e $SAVE_DIR ]] && mkdir "$SAVE_DIR"
+
+        # Current Host Domains
+        for DOMAIN in $(defaults -currentHost domains) NSGlobalDomain; do
+            {
+                echo "currentHost" "$DOMAIN"
+                parse "$DOMAIN" -currentHost >> "$SAVE_DIR/$DOMAIN.currentHost.sh"
+                chmod a+x "$SAVE_DIR/$DOMAIN.currentHost.sh"
+            } &
+            while [[ $(jobs -p | wc -w) -ge 8 ]]; do sleep 0.1; done
+        done
+        wait
+
+        # User Domains + NSGlobalDomain
+        for DOMAIN in $(defaults domains) NSGlobalDomain; do
+            {
+                echo "$DOMAIN"
+                parse "$DOMAIN" >> "$SAVE_DIR/$DOMAIN.sh"
+                chmod a+x "$SAVE_DIR/$DOMAIN.sh"
+            } &
+            while [[ $(jobs -p | wc -w) -ge 8 ]]; do sleep 0.1; done
+        done
+        wait
+    )
+}
+
+# Show usage and exit with code 0.
+usage() {
+    local y='\e[1;33m' # Yellow and Bold
+    local p='\e[1;35m' # Purple and Bold
+    local c='\e[4;36m' # Cyan and Underlined
+    local g='\e[0;32m' # Green
+    local r='\e[0m'    # Reset
+
+    # shellcheck disable=SC2059
+    printf "${p}NAME${r}
+    ${y}defaults.sh${r} -- Convert user defaults (plist) into shell script
+
+${p}USAGE${r}
+    ${y}ds${r}
+
+    ${y}ds${r} (-d | domain) ${c}<(domain | plist-path)>${r}
+    ${y}ds${r} (-c | currentHost) ${c}<domain>${r}
+    ${y}ds${r} (-s | save)
+
+    ${y}ds${r} (-e | --regex) ${c}<pattern>${r} (-d | domain) ${c}<(domain | plist-path)>${r}
+    ${y}ds${r} (-e | --regex) ${c}<pattern>${r} (-c | currentHost) ${c}<domain>${r}
+    ${y}ds${r} (-e | --regex) ${c}<pattern>${r} (-s | save)
+
+${p}DESCRIPTION${r}
+    ${y}[no command]${r}
+            Shows this help.
+
+    ${y}(-e | --regex)${r} ${c}<pattern>${r}
+            Specify a pattern to filter keys.
+
+    ${y}(-d | domain)${r} ${c}<(domain | plist-path)>${r}
+            Prints parsed user defaults of specified domain or .plist file.
+            Both of the following commands are valid:
+                ${g}$ ds -d com.apple.dock${r}
+                ${g}$ ds -d ~/Library/Preferences/com.apple.dock.plist${r}
+
+    ${y}(-c | currentHost)${r} ${c}<domain>${r}
+            Same as ${y}(-d | domain)${r}, except operation will be restricted
+            to the host the user is currently logged in on.
+
+    ${y}(-s | save)${r}
+            Exports all the defaults as executable .sh files.
+            (To '~/Desktop/ds +%%Y.%%m.%%d %%H.%%M.%%S/')
+
+            Domains are:
+                'defaults -currentHost domains' + NSGlobalDomain
+                'defaults domains' + NSGlobalDomain
+"
+    exit 0
+}
+
+# Show error message and exit with code 1.
+fatalError() {
+    echo "$1" 1>&2
+    echo "Type 'ds' for usage." 1>&2
+    exit 1
+}
+
+# Show Usage
+[[ $# -eq 0 ]] && usage
+
+REGEXP=""
+
+# Extract Regex pattern arguments
+for arg in "$@"; do
+    case "$arg" in
+        -e | --regex)
+            [[ -n $REGEXP ]] && fatalError "Multiple pattern is not supported."
+            shift && REGEXP="$1" && shift
+            ;;
+    esac
+done
+
+# Main
+for arg in "$@"; do
+    case "$arg" in
+        -d | domain)
+            shift
+            [[ ! $# -eq 1 ]] && fatalError "Invalid number of arguments."
+            parse "$1"
+            ;;
+
+        -c | currentHost)
+            shift
+            [[ ! $# -eq 1 ]] && fatalError "Invalid number of arguments."
+            parse "$1" -currentHost
+            ;;
+
+        -s | save)
+            shift
+            [[ ! $# -eq 0 ]] && fatalError "Invalid number of arguments."
+            save
+            ;;
+
+        *)
+            fatalError "Invalid argument '$1'."
+            ;;
+
+    esac
+    exit $?
+done

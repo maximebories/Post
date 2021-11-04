@@ -1,0 +1,74 @@
+#!/usr/bin/env bash
+
+defaults write com.apple.parsecd "PARDefaultsVersion" -integer 4
+defaults write com.apple.parsecd "PARTestSeed" -integer 46
+defaults write com.apple.parsecd "PARTestSeedExpiration" -date '2021-10-03T19:59:08Z'
+defaults write com.apple.parsecd "download_resources" '
+<dict>
+	<key>autofill_tld_whitelist_url</key>
+	<dict>
+		<key>url</key>
+		<string>https://cdn.smoot.apple.com/static/autofill_tld_whitelist_url?version=d82910c408523dcb3cfb020124f6e8b9</string>
+	</dict>
+	<key>correction_dict_url</key>
+	<dict>
+		<key>url</key>
+		<string>https://cdn.smoot.apple.com/static/static_corrections_dict/20200930/static_corrections_dict.json?version=20200930</string>
+	</dict>
+	<key>crowdsourcing_blacklist_url</key>
+	<dict>
+		<key>url</key>
+		<string>https://cdn.smoot.apple.com/static/crowdsourcing_blacklist_url?version=2ca06afd0850f1f42695f6b6928dc0f4</string>
+	</dict>
+	<key>crowdsourcing_whitelist_url</key>
+	<dict>
+		<key>url</key>
+		<string>https://cdn.smoot.apple.com/static/crowdsourcing_whitelist_url?version=032857ed01170d11e723650d446758bd</string>
+	</dict>
+	<key>dictionary_resources_url</key>
+	<dict>
+		<key>url</key>
+		<string>https://cdn.smoot.apple.com/static/dictionary_resources_url?version=d4546b111e90a1d7005fa43d34bd2f7b</string>
+	</dict>
+	<key>installed_app_whitelist_url</key>
+	<dict>
+		<key>url</key>
+		<string>https://api.smoot.apple.com/static/installed_app_whitelist_url?version=77209e2e310a35da1cbea2e72583ce58</string>
+	</dict>
+	<key>qi_features_url</key>
+	<dict>
+		<key>url</key>
+		<string>https://api.smoot.apple.com/static/qi_features_url?locale=en_FR&amp;version=00000000000000000000000000000014</string>
+	</dict>
+	<key>silhouette_config</key>
+	<dict>
+		<key>url</key>
+		<string>https://cdn.smoot.apple.com/static/silhouette_config/5/silhouette_config?version=5</string>
+	</dict>
+	<key>silhouette_topic_mapping</key>
+	<dict>
+		<key>url</key>
+		<string>https://cdn.smoot.apple.com/static/silhouette_topic_mapping/5/silhouette_topic_mapping?version=5</string>
+	</dict>
+	<key>silhouette_whitelisted_topics</key>
+	<dict>
+		<key>url</key>
+		<string>https://cdn.smoot.apple.com/static/silhouette_whitelisted_topics/5/silhouette_whitelisted_topics?version=5</string>
+	</dict>
+	<key>spotlight_model_resources</key>
+	<dict>
+		<key>url</key>
+		<string>https://cdn.smoot.apple.com/static/spotlight_model_resources/2/spotlight_ml.mpak?version=2</string>
+	</dict>
+	<key>spotlight_phrase_dictionary.map</key>
+	<dict>
+		<key>url</key>
+		<string>https://cdn.smoot.apple.com/static/spotlight_suggestions_phrase_dictionary/4/phrase-dictionary-en-US.map?version=4</string>
+	</dict>
+	<key>spotlight_stopword.map</key>
+	<dict>
+		<key>url</key>
+		<string>https://cdn.smoot.apple.com/static/spotlight_suggestions_stopwords/4/stopwords-en.map?version=4</string>
+	</dict>
+</dict>
+'

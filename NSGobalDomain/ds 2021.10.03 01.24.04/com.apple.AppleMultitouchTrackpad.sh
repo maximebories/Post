@@ -1,0 +1,30 @@
+#!/usr/bin/env bash
+
+defaults write com.apple.AppleMultitouchTrackpad "ActuateDetents" -integer 1
+defaults write com.apple.AppleMultitouchTrackpad "Clicking" -integer 0
+defaults write com.apple.AppleMultitouchTrackpad "DragLock" -integer 0
+defaults write com.apple.AppleMultitouchTrackpad "Dragging" -integer 0
+defaults write com.apple.AppleMultitouchTrackpad "FirstClickThreshold" -integer 1
+defaults write com.apple.AppleMultitouchTrackpad "ForceSuppressed" -boolean false
+defaults write com.apple.AppleMultitouchTrackpad "SecondClickThreshold" -integer 1
+defaults write com.apple.AppleMultitouchTrackpad "TrackpadCornerSecondaryClick" -integer 0
+defaults write com.apple.AppleMultitouchTrackpad "TrackpadFiveFingerPinchGesture" -integer 2
+defaults write com.apple.AppleMultitouchTrackpad "TrackpadFourFingerHorizSwipeGesture" -integer 2
+defaults write com.apple.AppleMultitouchTrackpad "TrackpadFourFingerPinchGesture" -integer 2
+defaults write com.apple.AppleMultitouchTrackpad "TrackpadFourFingerVertSwipeGesture" -integer 2
+defaults write com.apple.AppleMultitouchTrackpad "TrackpadHandResting" -boolean true
+defaults write com.apple.AppleMultitouchTrackpad "TrackpadHorizScroll" -integer 1
+defaults write com.apple.AppleMultitouchTrackpad "TrackpadMomentumScroll" -boolean true
+defaults write com.apple.AppleMultitouchTrackpad "TrackpadPinch" -integer 1
+defaults write com.apple.AppleMultitouchTrackpad "TrackpadRightClick" -boolean true
+defaults write com.apple.AppleMultitouchTrackpad "TrackpadRotate" -integer 1
+defaults write com.apple.AppleMultitouchTrackpad "TrackpadScroll" -boolean true
+defaults write com.apple.AppleMultitouchTrackpad "TrackpadThreeFingerDrag" -boolean false
+defaults write com.apple.AppleMultitouchTrackpad "TrackpadThreeFingerHorizSwipeGesture" -integer 2
+defaults write com.apple.AppleMultitouchTrackpad "TrackpadThreeFingerTapGesture" -integer 2
+defaults write com.apple.AppleMultitouchTrackpad "TrackpadThreeFingerVertSwipeGesture" -integer 2
+defaults write com.apple.AppleMultitouchTrackpad "TrackpadTwoFingerDoubleTapGesture" -integer 1
+defaults write com.apple.AppleMultitouchTrackpad "TrackpadTwoFingerFromRightEdgeSwipeGesture" -integer 3
+defaults write com.apple.AppleMultitouchTrackpad "USBMouseStopsTrackpad" -integer 0
+defaults write com.apple.AppleMultitouchTrackpad "UserPreferences" -boolean true
+defaults write com.apple.AppleMultitouchTrackpad "version" -integer 12

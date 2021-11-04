@@ -1,0 +1,33 @@
+#!/usr/bin/env bash
+
+defaults write com.apple.SetupAssistant "DidSeeAccessibility" -boolean true
+defaults write com.apple.SetupAssistant "DidSeeActivationLock" -boolean true
+defaults write com.apple.SetupAssistant "DidSeeAppStore" -boolean false
+defaults write com.apple.SetupAssistant "DidSeeAppearanceSetup" -boolean true
+defaults write com.apple.SetupAssistant "DidSeeApplePaySetup" -boolean false
+defaults write com.apple.SetupAssistant "DidSeeAvatarSetup" -boolean false
+defaults write com.apple.SetupAssistant "DidSeeCloudSetup" -boolean true
+defaults write com.apple.SetupAssistant "DidSeePrivacy" -boolean true
+defaults write com.apple.SetupAssistant "DidSeeScreenTime" -boolean true
+defaults write com.apple.SetupAssistant "DidSeeSiriSetup" -boolean true
+defaults write com.apple.SetupAssistant "DidSeeSyncSetup" -boolean true
+defaults write com.apple.SetupAssistant "DidSeeSyncSetup2" -boolean true
+defaults write com.apple.SetupAssistant "DidSeeTouchIDSetup" -boolean false
+defaults write com.apple.SetupAssistant "DidSeeiCloudLoginForStorageServices" -boolean true
+defaults write com.apple.SetupAssistant "LastPreLoginTasksPerformedBuild" -string '21A5534d'
+defaults write com.apple.SetupAssistant "LastPreLoginTasksPerformedVersion" -string '12.0'
+defaults write com.apple.SetupAssistant "LastPrivacyBundleVersion" -string '2'
+defaults write com.apple.SetupAssistant "LastSeenBuddyBuildVersion" -string '21A5506j'
+defaults write com.apple.SetupAssistant "LastSeenCloudProductVersion" -string '12.0'
+defaults write com.apple.SetupAssistant "LastSeenDiagnosticsProductVersion" -string '12.0'
+defaults write com.apple.SetupAssistant "LastSeenSiriProductVersion" -string '12.0'
+defaults write com.apple.SetupAssistant "LastSeenSyncProductVersion" -string '12.0'
+defaults write com.apple.SetupAssistant "LastSeeniCloudStorageServicesProductVersion" -string '12.0'
+defaults write com.apple.SetupAssistant "MiniBuddyLaunchReason" -integer 0
+defaults write com.apple.SetupAssistant "MiniBuddyLaunchedPostMigration" -boolean false
+defaults write com.apple.SetupAssistant "MiniBuddyShouldLaunchToResumeSetup" -boolean false
+defaults write com.apple.SetupAssistant "NSAddServicesToContextMenus" -boolean false
+defaults write com.apple.SetupAssistant "PreviousBuildVersion" -string '21A5506j'
+defaults write com.apple.SetupAssistant "PreviousSystemVersion" -string '12.0'
+defaults write com.apple.SetupAssistant "SkipExpressSettingsUpdating" -boolean false
+defaults write com.apple.SetupAssistant "SkipFirstLoginOptimization" -boolean false

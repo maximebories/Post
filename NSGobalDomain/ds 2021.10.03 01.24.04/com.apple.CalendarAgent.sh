@@ -1,0 +1,19 @@
+#!/usr/bin/env bash
+
+defaults write com.apple.CalendarAgent "CALNNotificationIconIdentifierVersion" -integer 1
+defaults write com.apple.CalendarAgent "CalContactsProviderHistoryToken" '
+<data>
+YnBsaXN0MDDUAQIDBAUGBwpYJHZlcnNpb25ZJGFyY2hpdmVyVCR0b3BYJG9iamVjdHMS
+AAGGoF8QD05TS2V5ZWRBcmNoaXZlctEICVZfdG9rZW6AAacLDBEZGhshVSRudWxs0g0O
+DxBWJGNsYXNzXxAiTlNQZXJzaXN0ZW50SGlzdG9yeVRva2VuRGljdGlvbmFyeYAGgALT
+EhMNFBYYV05TLmtleXNaTlMub2JqZWN0c6EVgAOhF4AEgAVfECRBNzYwMDMzNC0xNkI2
+LTRENzAtQTgzNS1ERjFEMDRGRDU2RUQQBdIcHR4fWiRjbGFzc25hbWVYJGNsYXNzZXNc
+TlNEaWN0aW9uYXJ5oh4gWE5TT2JqZWN00hwdIiNfEBlfTlNQZXJzaXN0ZW50SGlzdG9y
+eVRva2VuoyQlIF8QGV9OU1BlcnNpc3RlbnRIaXN0b3J5VG9rZW5fEBhOU1BlcnNpc3Rl
+bnRIaXN0b3J5VG9rZW4ACAARABoAJAApADIANwBJAEwAUwBVAF0AYwBoAG8AlACWAJgA
+nwCnALIAtAC2ALgAugC8AOMA5QDqAPUA/gELAQ4BFwEcATgBPAFYAAAAAAAAAgEAAAAA
+AAAAJgAAAAAAAAAAAAAAAAAAAXM=
+</data>
+'
+defaults write com.apple.CalendarAgent "databaseWasReset" -boolean false
+defaults write com.apple.CalendarAgent "icaluuid" -string '51805268-94D6-482F-A51D-5A214C0B1564'

@@ -1,0 +1,12 @@
+#!/usr/bin/env bash
+
+defaults write com.apple.FolderActionsDispatcher "folderActions" '
+<data>
+YnBsaXN0MDDUAQIDBAUGBwpYJHZlcnNpb25ZJGFyY2hpdmVyVCR0b3BYJG9iamVjdHMS
+AAGGoF8QD05TS2V5ZWRBcmNoaXZlctEICVRyb290gAGjCwwRVSRudWxs0g0ODxBaTlMu
+b2JqZWN0c1YkY2xhc3OggALSEhMUFVokY2xhc3NuYW1lWCRjbGFzc2VzXk5TTXV0YWJs
+ZUFycmF5oxQWF1dOU0FycmF5WE5TT2JqZWN0CBEaJCkyN0lMUVNXXWJtdHV3fIeQn6Or
+AAAAAAAAAQEAAAAAAAAAGAAAAAAAAAAAAAAAAAAAALQ=
+</data>
+'
+defaults write com.apple.FolderActionsDispatcher "folderActionsEnabled" -boolean false

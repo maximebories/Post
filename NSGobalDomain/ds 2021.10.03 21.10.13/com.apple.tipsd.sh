@@ -1,0 +1,68 @@
+#!/usr/bin/env bash
+
+defaults write com.apple.tipsd "ConsecutiveNotificationsCount" -integer 1
+defaults write com.apple.tipsd "DeliveryEventIdentifierToDeliveryEventMap" '
+<data>
+YnBsaXN0MDDUAQIDBAUGBwpYJHZlcnNpb25ZJGFyY2hpdmVyVCR0b3BYJG9iamVjdHMS
+AAGGoF8QD05TS2V5ZWRBcmNoaXZlctEICVRyb290gAGjCwwTVSRudWxs0w0ODxAREldO
+Uy5rZXlzWk5TLm9iamVjdHNWJGNsYXNzoKCAAtIUFRYXWiRjbGFzc25hbWVYJGNsYXNz
+ZXNfEBNOU011dGFibGVEaWN0aW9uYXJ5oxYYGVxOU0RpY3Rpb25hcnlYTlNPYmplY3QI
+ERokKTI3SUxRU1ddZGx3fn+AgoeSm7G1wgAAAAAAAAEBAAAAAAAAABoAAAAAAAAAAAAA
+AAAAAADL
+</data>
+'
+defaults write com.apple.tipsd "DeliveryInfoVersion" -string '93c6896f754a03411af465c9f2c13f6b7a997aa25af2e6900d25024dc4eeecfe'
+defaults write com.apple.tipsd "DiscoverabilityDeliveryInfoMap" '
+<data>
+YnBsaXN0MDDUAQIDBAUGBwpYJHZlcnNpb25ZJGFyY2hpdmVyVCR0b3BYJG9iamVjdHMS
+AAGGoF8QD05TS2V5ZWRBcmNoaXZlctEICVRyb290gAGjCwwTVSRudWxs0w0ODxAREldO
+Uy5rZXlzWk5TLm9iamVjdHNWJGNsYXNzoKCAAtIUFRYXWiRjbGFzc25hbWVYJGNsYXNz
+ZXNfEBNOU011dGFibGVEaWN0aW9uYXJ5oxYYGVxOU0RpY3Rpb25hcnlYTlNPYmplY3QI
+ERokKTI3SUxRU1ddZGx3fn+AgoeSm7G1wgAAAAAAAAEBAAAAAAAAABoAAAAAAAAAAAAA
+AAAAAADL
+</data>
+'
+defaults write com.apple.tipsd "Experiment" '
+<data>
+YnBsaXN0MDDUAQIDBAUGBwpYJHZlcnNpb25ZJGFyY2hpdmVyVCR0b3BYJG9iamVjdHMS
+AAGGoF8QD05TS2V5ZWRBcmNoaXZlctEICVRyb290gAGjCwwUVSRudWxs1A0ODxARERIT
+VGNhbXBSaWRWJGNsYXNzXxARaG9sZG91dEFsbG9jYXRpb24QAYACIz+5mZmZmZma0hUW
+FxhaJGNsYXNzbmFtZVgkY2xhc3Nlc11UUFNFeHBlcmltZW50ohkaXVRQU0V4cGVyaW1l
+bnRYTlNPYmplY3QIERokKTI3SUxRU1ddZmtudYmLjZabpq+9wM4AAAAAAAABAQAAAAAA
+AAAbAAAAAAAAAAAAAAAAAAAA1w==
+</data>
+'
+defaults write com.apple.tipsd "TPSAnalyticsHistoricTipsDataProcessor_DateLastRun" '
+<data>
+YnBsaXN0MDDUAQIDBAUGBwpYJHZlcnNpb25ZJGFyY2hpdmVyVCR0b3BYJG9iamVjdHMS
+AAGGoF8QD05TS2V5ZWRBcmNoaXZlctEICVRyb290gAGjCwwRVSRudWxs0g0ODxBXTlMu
+dGltZVYkY2xhc3MjQcOFCnXqu16AAtISExQVWiRjbGFzc25hbWVYJGNsYXNzZXNWTlNE
+YXRlohQWWE5TT2JqZWN0CBEaJCkyN0lMUVNXXWJqcXp8gYyVnJ8AAAAAAAABAQAAAAAA
+AAAXAAAAAAAAAAAAAAAAAAAAqA==
+</data>
+'
+defaults write com.apple.tipsd "TPSAnalyticsStore" '
+<dict>
+	<key>TPSLastNotificationTime</key>
+	<date>2021-10-03T07:38:10Z</date>
+	<key>TPSNotificationCount</key>
+	<integer>1</integer>
+</dict>
+'
+defaults write com.apple.tipsd "TPSAnalyticsUsageEventsProcessor_DateLastRun" '
+<data>
+YnBsaXN0MDDUAQIDBAUGBwpYJHZlcnNpb25ZJGFyY2hpdmVyVCR0b3BYJG9iamVjdHMS
+AAGGoF8QD05TS2V5ZWRBcmNoaXZlctEICVRyb290gAGjCwwRVSRudWxs0g0ODxBXTlMu
+dGltZVYkY2xhc3MjQcOFCnXp8qGAAtISExQVWiRjbGFzc25hbWVYJGNsYXNzZXNWTlNE
+YXRlohQWWE5TT2JqZWN0CBEaJCkyN0lMUVNXXWJqcXp8gYyVnJ8AAAAAAAABAQAAAAAA
+AAAXAAAAAAAAAAAAAAAAAAAAqA==
+</data>
+'
+defaults write com.apple.tipsd "TPSLastMajorVersion" -string '12'
+defaults write com.apple.tipsd "TPSLastNotificationDate" -date '2021-10-03T07:38:10Z'
+defaults write com.apple.tipsd "TPSOfflineLastProcessedRemoteContentIdentifier" -string 'en-GB-93c6896f754a03411af465c9f2c13f6b7a997aa25af2e6900d25024dc4eeecfe'
+defaults write com.apple.tipsd "TPSTipsAppInstalled" -boolean true
+defaults write com.apple.tipsd "TPSWaitingToShowWelcomeNotification" -boolean false
+defaults write com.apple.tipsd "TPSWelcomeNotificationReminderState" -integer 1
+defaults write com.apple.tipsd "TPSWelcomeNotificationStartDate" -date '2021-10-03T04:37:55Z'
+defaults write com.apple.tipsd "TPSWelcomeNotificationViewedVersion" -string '12'

@@ -1,11 +1,11 @@
 #!/bin/sh
-
+#
 # Unatended configuration of post macOS installation
-
+#
 ##################################################################
 #               Base, Pakage Management & Security               #
 ##################################################################
-
+#
 # Homebrew installation, choose master or HEAD depending on context
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 
@@ -31,3 +31,6 @@ ls ./icns/png | awk -F. '{print $1}' | xargs -I % sudo fileicon set /Application
 # Oh-My-ZSH
 
 sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+
+brew install romkatv/powerlevel10k/powerlevel10k
+echo "source $(brew --prefix)/opt/powerlevel10k/powerlevel10k.zsh-theme" >>~/.zshrc
